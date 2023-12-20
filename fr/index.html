@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherman Legends accueil</title>
+    <link rel="stylesheet" href="/src/css/index/header.css">
+    <link rel="stylesheet" href="src/css/layout/main.css">
+    <link rel="stylesheet" href="src/css/layout/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Dela+Gothic+One?query=Dela+Gothic" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
+</head>
+<body>
+    <header x-data="{ isOpen: false, isSubOpen: false }">  
+        <img src="/public/img/logo/Sherman Legends 1.png" alt="logo" id="logo">
+        <button @click="isOpen = !isOpen"> <img src="/public/img/logo/menu-open.png" alt="menu" id="menu"></button>
+    <nav x-show="isOpen" @click.away="isOpen = false" x-transition.duration.800ms class="halouil">
+       <ul>
+            <img src="public/img/Logo du site 1.png" alt="fet" id="fet">
+        <li><a href="biographie.html" id="dlc">Le M4A3E8 Sherman</a></li>
+            <img src="public/img/Barre de style blanc.png" alt="bar" id="bar">
+            <li @click="isSubOpen = !isSubOpen">
+                <a href="#section2" id="dlc">Article > </a></li>
+            <ul x-show="isSubOpen" @click.away="isSubOpen = false"  x-transition.duration.800ms>
+                <li id="li2"><a href="reliance.html" id="dlc2">Comprendre notre monde à travers les mots du Sergent Wardaddy</a></li>
+                <br>
+                <li id="li2"><a href="centre.html" id="dlc2"> Fury : Une immersion brutale dans les combats de tanks </a></li>
+                <br>
+                <li id="li2"><a href="lloyds.html" id="dlc2">‘Norman’ de Steven Price : Une symphonie de courage </a></li>
+                  <br>
+                  <li id="li2"><a href="inmos.html" id="dlc2">David Ayer : De la Rue à la Gloire</a></li>
+                    <br>
+                    <li id="li2"><a href="dome.html" id="dlc2">Machine de Guerre Tome 3 : Un Tourbillon de Conflits</a></li>
+                      <br>
+                </ul>
+            <img src="public/img/Barre de style blanc.png" alt="bar" id="bar">
+                <li><a href="frise.html" id="dlc">Frise chronologique</a></li>
+            <img src="public/img/Barre de style blanc.png" alt="bar" id="bar">
+            <li><a href="contact.html" id="dlc">Autres projet</a></li>
+            <img src="public/img/Barre de style blanc.png" alt="bar" id="bar">
+            <li><a href="#section5" id="dlc">A propos</a></li>
+            <li><a href="index.html" id="dlc">Contact</a></li>
+    </nav>
+       
+        <h1>Sherman Legends</h1>
+        <h2>“Les idéaux sont pacifiques, l’histoire est violente”</h2>
+        </header>
