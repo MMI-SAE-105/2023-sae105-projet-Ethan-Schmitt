@@ -112,3 +112,125 @@ body {
         background-color: #31005430; 
         border-radius: 10px; /* Add this line */
     }
+
+    img {
+        /* image responsive, largeur maxi */
+        /* hauteur "auto" */
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .carrousel_parent-ecrans {
+        /* aligne horizontalement les enfants */
+        /* largeur du parent */
+        display: flex;
+        width: 100%;
+        overflow-x: scroll; /* permet de scroller horizontalement */
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+      }
+      
+      .carrousel_ecran { 
+        /* largeur du parent pour chaque enfant */
+        /* permet de garder toute la largeur du parent */
+        width: 100%;
+        flex: none; 
+        scroll-snap-align: start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .carrousel_ecran figure {
+        /* enlève les marges par défaut */
+        margin: 0;
+      }
+      
+      .carrousel {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 300px; 
+        position: relative;
+      
+        /* Ajout des styles pour le cadre */
+        border: 5px solid #000; /* Remplacez #000 par la couleur que vous voulez pour le cadre */
+        border-radius: 10px; /* Remplacez 10px par la valeur que vous voulez pour arrondir les coins */
+        box-shadow:  10 10px rgba(0, 0, 0, 0.5); /* Remplacez les valeurs pour ajuster l'ombre */
+      }
+      
+      .carrousel_btn {
+        position: absolute;
+        top: 50%;
+        top: calc(
+          min(500px, 100vw) / 16 * 9 / 2 + 1rem
+        ); /* centre verticalement ~50% vertical */
+        transform: translateY(-50%); /* methode du point mort */
+        width: 2rem;
+        height: 2rem;
+        background: #6c00b9;
+        border-radius: 60%;
+        border: none;
+        display: grid;
+        place-content: center;
+        color: ##0131B4;
+        position: absolute;
+        top: 50%; /* Centrer verticalement */
+        transform: translateY(-50%);
+      }
+      
+      .carrousel_btn-avant {
+        left: 10px;
+      }
+      
+      .carrousel_btn-apres {
+        right: 10px;
+      }
+      
+      .caroussel_liste-liens {
+        display: flex; /* aligne horizontalement les enfants */
+        justify-content: center; /* centre horizontalement les enfants */
+        margin: 0; /* enlève les marges par défaut */
+        padding: 0; /* enlève les padding par défaut */
+        list-style: none; /* enlève les puces par défaut */
+        gap: 10px; /* espace entre les enfants */
+      }
+      
+      
+      h1 {
+        color: #0131B4; /* Remplacez #fff par la couleur que vous voulez pour le texte */
+        font-family: 'Roboto', sans-serif; /* Ajout de la police de caractères */
+      }
+      
+      .carrousel_parent-ecrans::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Change la couleur de fond de la barre de défilement */
+      .carrousel_parent-ecrans::-webkit-scrollbar-track {
+        background: #000000;
+      }
+      
+      /* Change la couleur du curseur de la barre de défilement */
+      .carrousel_parent-ecrans::-webkit-scrollbar-thumb {
+        background: #6c00b9; 
+      }
+      
+      /* Change la couleur du curseur de la barre de défilement lors du survol */
+      .carrousel_parent-ecrans::-webkit-scrollbar-thumb:hover {
+        background: #d3d3d3;
+      }
+      
+      .carrousel_btn:hover {
+        background-color:#d3d3d3; /* Changer la couleur de fond lors du survol */
+    }
+    
+    figcaption {
+      font-family: 'Oswald' ; /* Changer la police */
+      font-size: 16px; /* Changer la taille du texte */
+      text-align: center; /* Centrer le texte */
+      background-color: #d3d3d3; /* Changer la couleur de fond */
+  }
+   
+      
