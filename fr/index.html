@@ -6,7 +6,7 @@
     <title>Sherman Legends accueil</title>
     <link rel="stylesheet" href="/src/css/index/header.css">
     <link rel="stylesheet" href="/src/css/index/main.css">
-    <link rel="stylesheet" href="src/css/layout/footer.css">
+    <link rel="stylesheet" href="/src/css/index/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
     <link href="https://fonts.google.com/specimen/Dela+Gothic+One?query=Dela+Gothic" rel="stylesheet">
@@ -71,30 +71,117 @@
                     <div id="ecran-2" class="carrousel_ecran">
                         <figure>
                             <img src="/public/img/image/image 13.webp" alt="">
-                            <figcaption>Comprendre notre monde à travers 
-                                les mots du Sergent Wardaddy</figcaption>
+                            <figcaption>Fury: Une immersion brutale dans les combats de tanks</figcaption>
                         </figure>
                     </div>
                <div id="ecran-3" class="carrousel_ecran">
                         <figure>
                             <img src="/public/img/image/image 14.webp" alt="image ecran 3">
-                            <figcaption>Comprendre notre monde à travers 
-                                les mots du Sergent Wardaddy</figcaption>
+                            <figcaption>‘Norman’ de Steven Price : Une symphonie de courage</figcaption>
                     </figure>
                 </div>
                     <div id="ecran-4" class="carrousel_ecran">
                     <figure>
                          <img src="/public/img/image/image 15.webp" alt="image ecran 4">
-                         <figcaption>Comprendre notre monde à travers 
-                            les mots du Sergent Wardaddy</figcaption>    
+                         <figcaption>David Ayer : De la Rue à la Gloire</figcaption>    
                         </figure>
                     </div>
                         <div id="ecran-5" class="carrousel_ecran">
                         <figure>
                              <img src="/public/img/image/image 16.webp" alt="image ecran 5">
-                             <figcaption>Comprendre notre monde à travers 
-                                les mots du Sergent Wardaddy</figcaption>     
+                             <figcaption>Machine de Guerre Tome 3: Découvrez un résumé de la BD </figcaption>     
                         </figure>
                 </div>
             </div>
-        </main>
+        </div>
+        <h3>Découvrez la bande-annonce du film :</h3>
+        <img src="/public/img/logo/Barre de style jaune.png" alt="barre" id="barre">
+        <div class="video-container">
+        <video width="400" height="260" controls>
+            <source src="/public/video/FURY - Première Bande-Annonce - VF.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+          </video>
+        </div>
+        <h4> Découvrez les caractéristiques techniques du M4A3E8 Sherman :</h4>
+         <img src="/public/img/logo/Barre de style jaune.png" alt="barre" id="barre">
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+            <button @click="parent = $refs.parent ; parent.scrollLeft -= parent.clientWidth"
+                class="carrousel_btn carrousel_btn-avant" aria-label="slideprécedant">
+                &lt;
+            </button>
+            <button @click="parent = $refs.parent ; parent.scrollLeft += parent.clientWidth"
+                class="carrousel_btn carrousel_btn-apres" aria-label="slidesuivant">></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="/public/img/image/image 9.webp" alt="image ecran 1">
+                        <figcaption>Vue de face du M4A3E8
+                            Sherman </figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran" alt="image ecran 4">
+                    <figure>
+                        <img src="/public/img/image/image 10.webp" alt="">
+                        <figcaption>Vue de côté du M4A3E8
+                            Sherman</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                <figure>
+                     <img src="/public/img/image/image 11.webp" alt="image ecran 4">
+                     <figcaption>Vue de derrière du M4A3E8
+                        Sherman</figcaption>    
+                    </figure>
+                </div>
+        </div>
+     </div>
+     <button class="image-button">
+            <img src="/public/img/image/Button.png" alt="image ecran 1">
+        </button>
+</main>
+<footer>
+    <div class="logo-container">
+    <img src="/public/img/logo/Sherman Legends 1.png" alt="logo" id="logofooter">
+    <p id="expo">Sherman <br>Legends</p>        
+    <img src="/public/img/logo/logo-iut.png" alt="iut" id="iut">
+    </div>
+    <p id="suivi">suivez-moi</p>
+    <div class="footer-logos">
+        <a href="https://www.ins">
+          <img src="/public/img/logo/LinkedIn.png" alt="link" id="lg">
+        </a>
+        <a href="https://www.twitter.com">
+          <img src="/public/img/logo/TwitterX.png" alt="twitter" id="lg1">
+        </a>
+        <a href="https://www.tiktok.com">
+          <img src="/public/img/logo/TikTok.png" alt="tiktok" id="lg2">
+        </a>
+    </div>
+    <p id="nume">MENU</p>
+    <div class="container">
+        <div class="left">
+          Glossaire
+         </div>
+         <div class="center">
+             Mentions légales
+         </div>
+        <div class="right">
+          CONTACT
+        </div>
+      </div>
+      <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
+    <div class="container2">
+        <div class="left2">
+        <img src="/public/img/logo/Visit.png" alt="visit" id="vecteur">
+        </div>
+        <div class="right2">
+          <p>Département MMI, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
+        </div>
+      </div>
+      <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
+<div class="container3">
+        <div class="left3">
+          <p>© 2024 Sherman Legends. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>

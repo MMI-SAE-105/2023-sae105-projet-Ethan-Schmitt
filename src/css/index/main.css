@@ -232,5 +232,18 @@ body {
       text-align: center; /* Centrer le texte */
       background-color: #d3d3d3; /* Changer la couleur de fond */
   }
-   
+  .video-container {
+    text-align: center;
+}
+.image-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 20px auto; 
+  width: 150px; /* Modifier la largeur du bouton */
+}
+
       
