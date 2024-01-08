@@ -108,9 +108,10 @@ body {
         margin-left: 11px;
         margin-right: 11px;
         line-height: 170%; /* Increased line-height */
-        border: 1px solid#310054; 
+        border: 1px solid#DCDCDC; 
         background-color: #31005430; 
         border-radius: 10px; /* Add this line */
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5); 
     }
 
     img {
