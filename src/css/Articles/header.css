@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
 header {
-    background-image: url('/public/img/image/Accueil.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -73,7 +72,7 @@ header h1 {
 
 header h2 {
     color: #FFF;
-    font-family: "Mulish", sans-serif;
+    font-family: "Oswalds";
     font-size: 30px;
     font-style: normal;
     line-height: 100%;
@@ -164,7 +163,7 @@ header h3 {
     position: relative;
     z-index: 100;
   }
-
+  .noscroll,
   .noscroll body {
      overflow: hidden;
   }

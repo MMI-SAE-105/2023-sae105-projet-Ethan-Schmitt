@@ -11,7 +11,7 @@ header {
     border: none;
     margin-top: -40px;
     margin-left: -10px;
-    margin-right: -12px;
+    margin-right: -9px;
     display: flex;
     flex-direction: column;
     
@@ -231,3 +231,4 @@ li  {
     z-index: 1;
     margin-top: 5px;
   }
+  [x-cloak] { display: none; }

@@ -17,7 +17,7 @@
     <header x-data="{ isOpen: false, isSubOpen: false }">  
         <img src="/public/img/logo/Sherman Legends 1.png" alt="logo" id="logo">
         <button @click="isOpen = !isOpen"> <img src="/public/img/logo/menu-open.png" alt="menu" id="menu"></button>
-    <nav x-show="isOpen" @click.away="isOpen = false" x-transition.duration.800ms class="halouil">
+    <nav x-show="isOpen" @click.away="isOpen = false" x-transition.duration.800ms class="halouil" x-cloak>
        <ul>
             <img src="/public/img/logo/Sherman Legends 1.png" alt="fet" id="fet">
         <li><a href="/fr/m4a3e8.html" id="dlc">Le M4A3E8 Sherman</a></li>
@@ -46,7 +46,7 @@
             <li><a href="/fr/contact.html" id="dlc">Contact</a></li>
     </nav>
         <h1>Sherman Legends</h1>
-        <h2>“Les idéaux sont pacifiques, <br> l’histoire est violente”</h2>
+        <h2>“Les idéaux sont pacifiques, <br>l’histoire est violente”</h2>
         </header>
         <main>
             <img src="public/img/Barre de style.png" alt="barre" id="barre">
@@ -147,13 +147,13 @@
     </div>
     <p id="suivi">suivez-moi</p>
     <div class="footer-logos">
-        <a href="https://www.ins">
+        <a href="https://www.linkedin.com/in/ethan-schmitt-a0ab1b299/">
           <img src="/public/img/logo/LinkedIn.png" alt="link" id="lg">
         </a>
-        <a href="https://www.twitter.com">
+        <a href="https://twitter.com/Dr_Forta">
           <img src="/public/img/logo/TwitterX.png" alt="twitter" id="lg1">
         </a>
-        <a href="https://www.tiktok.com">
+        <a href="https://www.tiktok.com/@dr_forta">
           <img src="/public/img/logo/TikTok.png" alt="tiktok" id="lg2">
         </a>
     </div>

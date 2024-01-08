@@ -1,8 +1,8 @@
 footer {
     background-color: #000000;
     margin-top: 10px;
-    margin-left: -10px;
-    margin-right: -12px;
+    margin-left: -8px;
+    margin-right: -8px;
     margin-bottom: -30px;
     display: flex;
     flex-direction: column;
@@ -154,9 +154,9 @@ footer {
 }
 .left2 {
     text-align: left;
-    margin-left: 40px;
-    margin-top: 5px;
-    width: 24px;
+    margin-left: 12px;
+    margin-top: -5px;
+    width: 60px;
     height: 26px
     flex-direction: column;
     justify-content: center;
@@ -165,7 +165,7 @@ footer {
   }
   
   .right2 {
-    text-align: right;
+    text-align: center;
     margin-right: 55px;
     margin-top: 5px;
     color: white;
