@@ -234,6 +234,7 @@ body {
   }
   .video-container {
     text-align: center;
+    margin-top: 10px;
 }
 .image-button {
   display: block;
