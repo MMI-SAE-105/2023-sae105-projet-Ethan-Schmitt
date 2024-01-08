@@ -25,7 +25,7 @@ header::before {
     bottom: 0;
     left: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.23%, #FFF 146.44%);
-    background: rgba(47, 54, 180, 0.22);
+    background: rgba(1, 49, 180, 0.379);
     z-index: 0;
 }
 
@@ -231,3 +231,13 @@ li  {
     margin-top: 5px;
   }
   [x-cloak] { display: none; }
+
+
+  .header-page1 {
+    background-image: url('/public/img/image/Brad-Pitt.webp');
+    
+}
+
+.header-page2 {
+    background-image: url('/public/img/image/02\ 2.png');
+}

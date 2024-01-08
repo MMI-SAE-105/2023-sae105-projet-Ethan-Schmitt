@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fury: Une immersion brutale dans les combats de tanks</title>
+    <link rel="stylesheet" href="/src/css/Articles/header.css">
+    <link rel="stylesheet" href="/src/css/Articles/main.css">
+    <link rel="stylesheet" href="/src/css/Articles/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Dela+Gothic+One?query=Dela+Gothic" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
+</head>
+<body>
+    <header class="header-page2" x-data="{ isOpen: false, isSubOpen: false }">  
+        <a href="/fr/index.html">
+            <img src="/public/img/logo/Sherman Legends 1.png" alt="logo" id="logo">
+        </a>
+        <button @click="isOpen = !isOpen"> <img src="/public/img/logo/menu-open.png" alt="menu" id="menu"></button>
+    <nav x-show="isOpen" @click.away="isOpen = false" x-transition.duration.800ms class="halouil" x-cloak>
+       <ul>
+            <img src="/public/img/logo/Sherman Legends 1.png" alt="fet" id="fet">
+        <li><a href="/fr/m4a3e8.html" id="dlc">Le M4A3E8 Sherman</a></li>
+            <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
+            <li @click="isSubOpen = !isSubOpen">
+                <a href="#section2" id="dlc">Article > </a></li>
+            <ul x-show="isSubOpen" @click.away="isSubOpen = false"  x-transition.duration.800ms>
+                <li id="li2"><a href="/fr/comprendre.html" id="dlc2">Comprendre notre monde à travers les mots du Sergent Wardaddy</a></li>
+                <br>
+                <li id="li2"><a href="/fr/fury.html" id="dlc2"> Fury : Une immersion brutale dans les combats de tanks </a></li>
+                <br>
+                <li id="li2"><a href="/fr/norman.html" id="dlc2">‘Norman’ de Steven Price : Une symphonie de courage </a></li>
+                  <br>
+                  <li id="li2"><a href="/fr/david.html" id="dlc2">David Ayer : De la Rue à la Gloire</a></li>
+                    <br>
+                    <li id="li2"><a href="/fr/machine.html" id="dlc2">Machine de Guerre Tome 3 : Un Tourbillon de Conflits</a></li>
+                      <br>
+                </ul>
+            <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
+                <li><a href="/fr/frisechrono.html" id="dlc">Frise chronologique</a></li>
+            <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
+            <li><a href="/fr/autresprojet.html" id="dlc">Autres projet</a></li>
+            <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
+            <li><a href="/fr/apropos.html" id="dlc">A propos</a></li>
+            <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
+            <li><a href="/fr/contact.html" id="dlc">Contact</a></li>
+    </nav>
+        <h1>Fury: Une immersion brutale dans les combats de tanks</h1>
+        </header>
+        <main>
+            <img src="public/img/Barre de style.png" alt="barre" id="barre">
+            <p id="intro">Nous sommes en avril 1945 en Allemagne, à bord du char d’assaut M4A3E8 Sherman surnommé Fury, commandé par le sergent Don Wardaddy. Son équipage est composé de quatre hommes : Boyd Swan, Trini Garcia, Grady Travis et le petit nouveau, Norman Ellison, qui remplace Red, tombé au combat. Ensemble, ils ont pour mission de prêter main-forte au capitaine Waggoner. Ce dernier leur demandera de dégager la voie jusqu’à la prochaine ville. Une mission qui s’avérera hautement périlleuse…</p>
+            <img src="/public/img/image/Equipe.webp" >
+            <p>Sortie le 22 octobre 2014 et réalisée par David Ayer, Fury est un film de guerre se déroulant dans les dernières semaines de la seconde guerre mondiale. A l’affiche de grands acteurs comme Brad Pitt, Shia LaBeouf ou Jon Bernthal.</p>
+            <h1>Personnage :</h1>
+            <p><strong>Sergent Don ‘Wardaddy’ Collier (Brad Pitt) :</strong> Il est le commandant du char d’assaut M4A3E8 Sherman. C’est un leader courageux et déterminé, qui peut parfois être impitoyable, comme avec Norman au début du film. Cependant, il a un très bon fond, découvert vers la fin du film, car son souci principal est de garder ses hommes en vie.</p>
+            <p><strong>Boyd ‘Bible’ Swan (Shia LaBeouf) :</strong> Il est le tireur du char. Son personnage est profondément religieux et est connu pour sa grande précision et son dévouement, notamment dans la bataille contre le char Tigre allemand. Cependant, il reste assez émotif et à l’écoute des autres.</p>
+            <p><strong>Corporal Trini ‘Gordo’ Garcia (Michael Peña) :</strong> Il est le pilote du char. Son personnage est habile et sa capacité à naviguer dans des terrains difficiles est cruciale pour la réussite de la mission. Il est d’origine mexicaine, ce qui explique qu’il parle parfois en espagnol. C’est un personnage avec un bon fond et qui est très efficace en combat, notamment dans les manœuvres effectuées lors du combat contre le char Tigre allemand.</p>
+            <p><strong>Grady ‘Coon-Ass’ Travis (Jon Bernthal) :</strong> Il est le chargeur-mécanicien du char. Son personnage est robuste et fiable, et sa connaissance du char a été plus qu’utile lors de diverses réparations pour remettre le char en état de marche, notamment au début du film quand il remet le moteur en état de marche. C’est un personnage assez violent, pervers et dur, notamment avec Norman, mais il sera finalement reconnaissant et admiratif envers cette jeune recrue.</p>
+            <p><strong>Norman Ellison ‘Machine’ (Logan Lerman) :</strong> Il est le nouveau copilote-mitrailleur qui remplace Red, tombé au combat. Malgré son inexpérience, il doit rapidement s’adapter à la réalité brutale de la guerre. C’est un personnage fragile au début du film, mais qui deviendra de plus en plus courageux au fil du temps. Avant de faire preuve d’un acte de bravoure exceptionnel en étant prêt à se sacrifier aux côtés du sergent Wardaddy pour ralentir l’ennemi.</p>
+            <h2>Critique</h2>
+            <p><strong>-</strong> “Fury” a reçu des critiques généralement positives. Sur AlloCiné, le film a une note moyenne de 4,1 sur 5 basée sur 22829 notes. Un critique a mentionné que “Fury” produit un effet et même un choc impressionnant. Sur SensCritique, le film a une note de 6,7 sur 10. Les critiques sont mitigées, certaines louant le réalisme et l’intensité du film.</p>
+            <p><strong>-</strong> Cependant, “Fury” a également reçu des critiques négatives. Certaines critiques ont souligné des problèmes de rythme qui entravent le bon déroulé du film. EcranLarge a critiqué le personnage de Logan Lerman, le qualifiant de greffe totalement inutile.</p>
+            <p>En résumé le film offre une représentation intense et réaliste des combats de tanks pendant la Seconde Guerre mondiale. Malgré certaines critiques négatives, le film a été généralement bien accueilli pour son réalisme et la performance de ses acteurs. Il reste un témoignage poignant de l’horreur de la guerre et du courage des hommes qui y ont combattu.</p>
+            <h3><strong>À ne pas manquer :</strong></h3>
+            <div class="center">
+            <a href="/fr/comprendre.html">
+                <img src="/public/img/logo/Ne pas manquer comprendre.png" alt="block" class="block">
+            </a>
+            <a href="/fr/norman.html">
+                <img src="/public/img/logo/Ne pas manquer Norman.png" alt="block" class="block">
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div class="logo-container">
+        <img src="/public/img/logo/Sherman Legends 1.png" alt="logo" id="logofooter">
+        <p id="expo">Sherman <br>Legends</p>        
+        <img src="/public/img/logo/logo-iut.png" alt="iut" id="iut">
+        </div>
+        <p id="suivi">suivez-moi</p>
+        <div class="footer-logos">
+            <a href="https://www.linkedin.com/in/ethan-schmitt-a0ab1b299/">
+              <img src="/public/img/logo/LinkedIn.png" alt="link" id="lg">
+            </a>
+            <a href="https://twitter.com/Dr_Forta">
+              <img src="/public/img/logo/TwitterX.png" alt="twitter" id="lg1">
+            </a>
+            <a href="https://www.tiktok.com/@dr_forta">
+              <img src="/public/img/logo/TikTok.png" alt="tiktok" id="lg2">
+            </a>
+        </div>
+        <p id="nume">MENU</p>
+        <div class="container">
+            <div class="left">
+              <a href="/fr/glossaire.html">Glossaire</a>
+             </div>
+             <div class="center">
+                 <a href="/fr/mentionlegales.html">Mentions légales</a>
+             </div>
+            <div class="right">
+              <a href="/fr/contact.html">CONTACT</a>
+            </div>
+          </div>
+          <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
+        <div class="container2">
+            <div class="left2">
+            <img src="/public/img/logo/Visit.png" alt="visit" id="vecteur">
+            </div>
+            <div class="right2">
+              <p>Département MMI, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
+            </div>
+          </div>
+          <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
+    <div class="container3">
+            <div class="left3">
+              <p>© 2024 Sherman Legends. Tous droits réservés.</p>
+            </div>
+          </div>
+        </footer>
+    </body>
+    </html>
