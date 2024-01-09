@@ -1,5 +1,6 @@
 body {
     background-color:#3D3C3C;
+    opacity: 1;
     z-index: -10;
     
     }
@@ -15,7 +16,7 @@ body {
         letter-spacing: 1.5px;
         text-transform: uppercase;
         z-index: 1;
-        margin-top: 20px;
+        margin-top: 250px;
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -102,7 +103,7 @@ main h3{
     font-size: 12px;
 }
       
-.background1 {
+.background1{
     background-image: url('/public/img/image/Back1.webp');
     margin-top: -7px;
     margin-left: -11px;
@@ -118,6 +119,7 @@ main h3{
     flex-direction: column;
     justify-content: center;
     z-index: -5;
+    position: relative;
 }
 
 .separator {
@@ -147,19 +149,19 @@ main h3{
 }
 
 .imgf{
-    width: 203px;
-    height: 314px;/* Ajustez la hauteur */
+    width: 207px;
+    height: auto;
     display: block;
-    margin: 0 auto; /* Centre l'image horizontalement */
-    position: relative;
-    margin-top: -90px;
-    z-index: 9;
+    margin-top: 25px;
+    z-index: 10;
+    position: absolute;
+    left: 50%; /* Centrer horizontalement */
+    transform: translateX(-50%); /* Décaler de moitié la largeur de l'image pour un centrage parfait */
     
 }
-a {
-   z-index: 10;
+
    
-}
+
 .background3 {
     background-image: url('/public/img/image/back\ 3.webp');
     margin-top: -7px;
@@ -227,4 +229,143 @@ a {
     flex-direction: column;
     justify-content: center;
     z-index: -5;
+}
+
+.imgf2{
+    
+    display: block;
+    margin-top: 100px;
+    z-index: 10;
+    position: absolute;
+    left: 50%; /* Centrer horizontalement */
+    transform: translateX(-50%); /* Décaler de moitié la largeur de l'image pour un centrage parfait */
+    
+}
+
+.background7{
+    background-image: url('/public/img/image/Auschiwtch.webp');
+    opacity: 0.5;
+    margin-top: -7px;
+    margin-left: -11px;
+    margin-right:-9px;
+    background-repeat: no-repeat; /* Empêche l'image de fond de se répéter */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 80vh;
+    position: relative;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -5;
+    position: relative;
+}
+.background8{
+    background-image: url('/public/img/image/Back1.webp');
+    margin-top: -7px;
+    margin-left: -11px;
+    margin-right:-9px;
+    background-repeat: no-repeat; /* Empêche l'image de fond de se répéter */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 80vh;
+    position: relative;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -5;
+    position: relative;
+}
+.background9{
+    background-image: url('/public/img/image/Back1.webp');
+    margin-top: -7px;
+    margin-left: -11px;
+    margin-right:-9px;
+    background-repeat: no-repeat; /* Empêche l'image de fond de se répéter */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 80vh;
+    position: relative;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -5;
+    position: relative;
+}
+.background10{
+    background-image: url('/public/img/image/Back1.webp');
+    margin-top: -7px;
+    margin-left: -11px;
+    margin-right:-9px;
+    background-repeat: no-repeat; /* Empêche l'image de fond de se répéter */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 80vh;
+    position: relative;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -5;
+    position: relative;
+}
+.background11{
+    background-image: url('/public/img/image/Back1.webp');
+    margin-top: -7px;
+    margin-left: -11px;
+    margin-right:-9px;
+    background-repeat: no-repeat; /* Empêche l'image de fond de se répéter */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 80vh;
+    position: relative;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -5;
+    position: relative;
+}
+.background12{
+    background-image: url('/public/img/image/Back1.webp');
+    margin-top: -7px;
+    margin-left: -11px;
+    margin-right:-9px;
+    background-repeat: no-repeat; /* Empêche l'image de fond de se répéter */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 80vh;
+    position: relative;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -5;
+    position: relative;
+}
+.background13{
+    background-image: url('/public/img/image/Back1.webp');
+    margin-top: -7px;
+    margin-left: -11px;
+    margin-right:-9px;
+    background-repeat: no-repeat; /* Empêche l'image de fond de se répéter */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 80vh;
+    position: relative;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -5;
+    position: relative;
 }
