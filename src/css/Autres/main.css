@@ -262,7 +262,8 @@ main h3{
     position: relative;
 }
 .background8{
-    background-image: url('/public/img/image/Back1.webp');
+    background-image: url('/public/img/image/58.webp');
+    opacity: 0.5;
     margin-top: -7px;
     margin-left: -11px;
     margin-right:-9px;
@@ -280,7 +281,8 @@ main h3{
     position: relative;
 }
 .background9{
-    background-image: url('/public/img/image/Back1.webp');
+    background-image: url('/public/img/image/81219cd9aa9b15a9f72a8dd947204502-0_1.webp');
+    opacity: 0.5;
     margin-top: -7px;
     margin-left: -11px;
     margin-right:-9px;
@@ -298,7 +300,8 @@ main h3{
     position: relative;
 }
 .background10{
-    background-image: url('/public/img/image/Back1.webp');
+    background-image: url('/public/img/image/56.webp');
+    opacity: 0.5;
     margin-top: -7px;
     margin-left: -11px;
     margin-right:-9px;
@@ -316,7 +319,8 @@ main h3{
     position: relative;
 }
 .background11{
-    background-image: url('/public/img/image/Back1.webp');
+    background-image: url('/public/img/image/57.webp');
+    opacity: 0.5;
     margin-top: -7px;
     margin-left: -11px;
     margin-right:-9px;
@@ -334,25 +338,8 @@ main h3{
     position: relative;
 }
 .background12{
-    background-image: url('/public/img/image/Back1.webp');
-    margin-top: -7px;
-    margin-left: -11px;
-    margin-right:-9px;
-    background-repeat: no-repeat; /* Empêche l'image de fond de se répéter */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 80vh;
-    position: relative;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: -5;
-    position: relative;
-}
-.background13{
-    background-image: url('/public/img/image/Back1.webp');
+    background-image: url('/public/img/image/60.webp');
+    opacity: 0.5;
     margin-top: -7px;
     margin-left: -11px;
     margin-right:-9px;
