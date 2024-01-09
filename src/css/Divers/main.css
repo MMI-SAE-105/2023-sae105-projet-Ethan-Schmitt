@@ -1,0 +1,107 @@
+body {
+    background-color:#000000;
+    
+    }
+    
+    main h1, main h2, main h4, main h5{
+        color: #000;
+        text-align: left;
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: bold; /* Added font-weight property */
+        line-height: 160%; /* 24px */
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        z-index: 1;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    main p, main ul {
+        color: #000;
+        font-family: 'Mulish', sans-serif;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 17.6px */
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+        z-index: 1;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 5px;
+        
+    }
+    
+    #barre {
+        display: flex;
+        width: 297px;
+        height: 2px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        margin: 0 auto; /* Added margin property to center the barre */
+    
+        z-index: 1;
+        margin-top: -5px;
+    }
+    
+    .center-text {
+        text-align: center;
+    }
+
+    #intro {
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        font-family: 'Mulsih', sans-serif;
+        font-size: 12px;
+        margin-left: 11px;
+        margin-right: 11px;
+        line-height: 170%; /* Increased line-height */
+        border: 1px solid#DCDCDC; 
+        background-color: #3100548b; 
+        border-radius: 10px; /* Add this line */
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5); 
+    }
+
+    img {
+        /* image responsive, largeur maxi */
+        /* hauteur "auto" */
+        max-width: 100%;
+        height: auto;
+      }
+      
+
+main h3{
+  color: #000;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold; /* Added font-weight property */
+  line-height: 160%; /* 24px */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  z-index: 1;
+  margin-top: 20px;
+}
+.block {
+    width: 50%; /* Régler la largeur de l'élément */
+    height: 50%; /* Régler la hauteur de l'élément */
+    
+}
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-char {
+    font-family: 'Muslish', sans-serif;
+    font-size: 12px;
+}
+    
