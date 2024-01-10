@@ -356,3 +356,57 @@ main h3{
     z-index: -5;
     position: relative;
 }
+
+.cadre {
+    display: flex;
+    background-color: #a550ff; /* Un violet très clair */
+    padding: 20px;
+    border: 1px solid #d1b3ff; /* Une bordure violette */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.cadre img {
+    margin-right: 34px;
+     max-width: 50%; /* Réduisez la largeur de l'image */
+    height: auto; /* La hauteur de l'image s'ajuste automatiquement pour conserver les proportions */
+    object-fit: contain;
+}
+
+.texte-et-bouton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bouton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000000; /* Un violet */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.bouton:hover {
+    background-color: #b094cc; /* Un violet plus foncé */
+}
+
+.imga{
+    width: 70px;
+    height: auto;
+   margin-top: -15px;
+   margin-left: -2px;
+   display:flex;
+}
+
+.imga2{
+    width: 115px;
+    height: auto;
+   margin-top: -15px;
+   margin-left: -2px;
+   display:flex;
+}
