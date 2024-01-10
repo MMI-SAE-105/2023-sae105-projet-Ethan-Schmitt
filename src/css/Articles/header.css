@@ -74,19 +74,20 @@ header h1 {
 
 header h2 {
     color: #FFF;
-    font-family: "Oswalds";
+    font-family: "Mulish", sans-serif;";
     font-size: 30px;
     font-style: normal;
     line-height: 100%;
     width: 380px;
     height: 1px;
     flex-shrink: 0;
-    position: relative;
+    position: absolute;
     z-index: 1;
    display: flex;
    margin-left: 20px;
    font-weight: 400;
    line-height: 100%;
+   margin-top: 450px;
     
 }
 @media (max-width: 600px) {
@@ -253,3 +254,32 @@ li  {
 .header-page5 {
     background-image: url('/public/img/image/bd.webp');
 }
+.icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    z-index: 1;
+    position: relative;
+    margin-right: 10px;
+
+}
+header p {
+    color: #FFF;
+    font-family: "mulish", sans-serif;
+    font-size: 15px;
+    flex-shrink: 0;
+    position: absolute;
+    line-height: 100%;
+    flex-shrink: 0;
+    z-index: 1;
+   display: flex;
+   margin-left: 20px;
+   margin-bottom: -490px;
+   font-weight: 100;
+   line-height: 100%; /* 40px */
+   width: 366px;
+   margin-left: 70px;
+   
+}
+   
+    
