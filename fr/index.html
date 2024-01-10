@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +14,11 @@
 
 </head>
 <body>
-    <header x-data="{ isOpen: false, isSubOpen: false }">  
+    <header  @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+        :class="{ 'header--atTop' : !atTop }" class="header">  
         <img src="/public/img/logo/Sherman Legends 1.png" alt="logo" id="logo">
-        <button @click="isOpen = !isOpen"> <img src="/public/img/logo/menu-open.png" alt="menu" id="menu"></button>
-    <nav x-show="isOpen" @click.away="isOpen = false" x-transition.duration.800ms class="halouil" x-cloak>
+        <button @click="menuIsOpen = !menuIsOpen"> <img src="/public/img/logo/menu-open.png" alt="menu" id="menu"></button>
+    <nav x-show="menuIsOpen" @click.away="menuIsOpen = false" x-transition.duration.800ms class="halouil" x-cloak>
        <ul>
             <img src="/public/img/logo/Sherman Legends 1.png" alt="fet" id="fet">
         <li><a href="/fr/m4a3e8.html" id="dlc">Le M4A3E8 Sherman</a></li>
@@ -49,104 +50,109 @@
             
            
     </nav>
-        <h1>Sherman Legends</h1>
-        <h2>“Les idéaux sont pacifiques, <br>l’histoire est violente”</h2>
-        </header>
-        <main>
-            <img src="public/img/Barre de style.png" alt="barre" id="barre">
-            <p id="intro"><strong>“Les idéaux sont pacifiques. L’Histoire est violente.”</strong> Cette réplique est prononcée par le personnage du Sergent Wardaddy, interprété par Brad Pitt, dans le film ‘Fury’. Vous vous demandez ce que signifie cette réplique ? Pourquoi est-elle si poignante ? Découvrez la réponse dans notre premier article. Vous trouverez également une présentation du char du film, le M4A3E8 Sherman surnommé ‘Fury’, ainsi qu’une présentation d’une bande dessinée en rapport avec le Sherman et bien plus encore...”</p>
-            <h2>Découvrez l’univers du film :</h2>
-            <img src="/public/img/logo/Barre de style jaune.png" alt="barre" id="barre">
-            <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
-                <button @click="parent = $refs.parent ; parent.scrollLeft -= parent.clientWidth"
-                    class="carrousel_btn carrousel_btn-avant" aria-label="slideprécedant">
-                    &lt;
-                </button>
-                <button @click="parent = $refs.parent ; parent.scrollLeft += parent.clientWidth"
-                    class="carrousel_btn carrousel_btn-apres" aria-label="slidesuivant">></button>
-                <div class="carrousel_parent-ecrans" x-ref="parent">
-                    <div id="ecran-1" class="carrousel_ecran">
-                        <figure>
-                            <a href="/fr/comprendre.html">
-                            <img src="/public/img/image/image 12.webp" alt="image ecran 1">
-                            </a>
-                            <figcaption>Comprendre notre monde à travers 
-                                les mots du Sergent Wardaddy</figcaption>
-                        </figure>
+                <h1>Sherman Legends</h1>
+                <h2>“Les idéaux sont pacifiques, <br>l’histoire est violente”</h2>
+                </header>
+                <main>
+                    <img src="public/img/Barre de style.png" alt="barre" id="barre">
+                    <p id="intro"><strong>“Les idéaux sont pacifiques. L’Histoire est violente.”</strong> Cette réplique est prononcée par le personnage du Sergent Wardaddy, interprété par Brad Pitt, dans le film ‘Fury’. Vous vous demandez ce que signifie cette réplique ? Pourquoi est-elle si poignante ? Découvrez la réponse dans notre premier article. Vous trouverez également une présentation du char du film, le M4A3E8 Sherman surnommé ‘Fury’, ainsi qu’une présentation d’une bande dessinée en rapport avec le Sherman et bien plus encore...”</p>
+                    <h2>Découvrez l’univers du film :</h2>
+                    <img src="/public/img/logo/Barre de style jaune.png" alt="barre" id="barre">
+                    <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+                        <button @click="parent = $refs.parent ; parent.scrollLeft -= parent.clientWidth"
+                            class="carrousel_btn carrousel_btn-avant" aria-label="slideprécedant">
+                            &lt;
+                        </button>
+                        <button @click="parent = $refs.parent ; parent.scrollLeft += parent.clientWidth"
+                            class="carrousel_btn carrousel_btn-apres" aria-label="slidesuivant">></button>
+                        <div class="carrousel_parent-ecrans" x-ref="parent">
+                            <div id="ecran-1" class="carrousel_ecran">
+                                <figure>
+                                    <a href="/fr/comprendre.html">
+                                    <img src="/public/img/image/image 12.webp" alt="image ecran 1">
+                                    </a>
+                                    <figcaption>Comprendre notre monde à travers 
+                                        les mots du Sergent Wardaddy</figcaption>
+                                </figure>
+                            </div>
+                            <div id="ecran-2" class="carrousel_ecran">
+                                <figure>
+                                    <a href="/fr/fury.html">
+                                    <img src="/public/img/image/image 13.webp" alt="">
+                                    </a>
+                                    <figcaption>Fury: Une immersion brutale dans les combats de tanks</figcaption>
+                                </figure>
+                            </div>
+                       <div id="ecran-3" class="carrousel_ecran">
+                                <figure>
+                                    <a href="/fr/norman.html">
+                                    <img src="/public/img/image/image 14.webp" alt="image ecran 3">
+                                    </a>
+                                    <figcaption>‘Norman’ de Steven Price : Une symphonie de courage</figcaption>
+                            </figure>
+                        </div>
+                            <div id="ecran-4" class="carrousel_ecran">
+                            <figure>
+                                <a href="/fr/david.html">
+                                <img src="/public/img/image/image 15.webp" alt="image ecran 4">
+                                </a>
+                                <figcaption>David Ayer : De la Rue à la Gloire</figcaption>    
+                                </figure>
+                            </div>
+                                <div id="ecran-5" class="carrousel_ecran">
+                                <figure>
+                                    <a href="/fr/machine.html">
+                                    <img src="/public/img/image/image 16.webp" alt="image ecran 5">
+                                    </a>
+                                    <figcaption>Machine de Guerre Tome 3: Découvrez un résumé de la BD </figcaption>     
+                                </figure>
+                        </div>
                     </div>
-                    <div id="ecran-2" class="carrousel_ecran">
+                </div>
+                </main>
+                <h3>Découvrez la bande-annonce du film :</h3>
+                <img src="/public/img/logo/Barre de style jaune.png" alt="barre" id="barre">
+                <div class="video-container">
+                <video width="350" height="200" controls>
+                    <source src="https://ethan-schmitt.fr/video/furyvf.webm" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                  </video>
+                </div>
+                <h4> Découvrez les caractéristiques techniques du M4A3E8 Sherman :</h4>
+                 <img src="/public/img/logo/Barre de style jaune.png" alt="barre" id="barre">
+                <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+                    <button @click="parent = $refs.parent ; parent.scrollLeft -= parent.clientWidth"
+                        class="carrousel_btn carrousel_btn-avant" aria-label="slideprécedant">
+                        &lt;
+                    </button>
+                    <button @click="parent = $refs.parent ; parent.scrollLeft += parent.clientWidth"
+                        class="carrousel_btn carrousel_btn-apres" aria-label="slidesuivant">></button>
+                    <div class="carrousel_parent-ecrans" x-ref="parent">
+                        <div id="ecran-1" class="carrousel_ecran">
+                            <figure>
+                                <img src="/public/img/image/image 9.webp" alt="image ecran 1">
+                                <figcaption>Vue de face du M4A3E8
+                                    Sherman </figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-2" class="carrousel_ecran" alt="image ecran 4">
+                            <figure>
+                                <img src="/public/img/image/image 10.webp" alt="">
+                                <figcaption>Vue de côté du M4A3E8
+                                    Sherman</figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-4" class="carrousel_ecran">
                         <figure>
-                            <a href="/fr/fury.html">
-                            <img src="/public/img/image/image 13.webp" alt="">
-                            </a>
-                            <figcaption>Fury: Une immersion brutale dans les combats de tanks</figcaption>
-                        </figure>
+                             <img src="/public/img/image/image 11.webp" alt="image ecran 4">
+                             <figcaption>Vue de derrière du M4A3E8
+                                Sherman</figcaption>    
+                            </figure>
+                        </div>
                     </div>
-               <div id="ecran-3" class="carrousel_ecran">
-                        <figure>
-                            <a href="/fr/norman.html">
-                            <img src="/public/img/image/image 14.webp" alt="image ecran 3">
-                            </a>
-                            <figcaption>‘Norman’ de Steven Price : Une symphonie de courage</figcaption>
-                    </figure>
                 </div>
-                    <div id="ecran-4" class="carrousel_ecran">
-                    <figure>
-                        <a href="/fr/david.html">
-                        <img src="/public/img/image/image 15.webp" alt="image ecran 4">
-                        </a>
-                        <figcaption>David Ayer : De la Rue à la Gloire</figcaption>    
-                        </figure>
-                    </div>
-                        <div id="ecran-5" class="carrousel_ecran">
-                        <figure>
-                            <a href="/fr/machine.html">
-                            <img src="/public/img/image/image 16.webp" alt="image ecran 5">
-                            </a>
-                            <figcaption>Machine de Guerre Tome 3: Découvrez un résumé de la BD </figcaption>     
-                        </figure>
-                </div>
-            </div>
-        </div>
-        <h3>Découvrez la bande-annonce du film :</h3>
-        <img src="/public/img/logo/Barre de style jaune.png" alt="barre" id="barre">
-        <div class="video-container">
-        <video width="350" height="200" controls>
-            <source src="https://ethan-schmitt.fr/video/furyvf.webm" type="video/mp4">
-            Votre navigateur ne supporte pas la vidéo.
-          </video>
-        </div>
-        <h4> Découvrez les caractéristiques techniques du M4A3E8 Sherman :</h4>
-         <img src="/public/img/logo/Barre de style jaune.png" alt="barre" id="barre">
-        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
-            <button @click="parent = $refs.parent ; parent.scrollLeft -= parent.clientWidth"
-                class="carrousel_btn carrousel_btn-avant" aria-label="slideprécedant">
-                &lt;
-            </button>
-            <button @click="parent = $refs.parent ; parent.scrollLeft += parent.clientWidth"
-                class="carrousel_btn carrousel_btn-apres" aria-label="slidesuivant">></button>
-            <div class="carrousel_parent-ecrans" x-ref="parent">
-                <div id="ecran-1" class="carrousel_ecran">
-                    <figure>
-                        <img src="/public/img/image/image 9.webp" alt="image ecran 1">
-                        <figcaption>Vue de face du M4A3E8
-                            Sherman </figcaption>
-                    </figure>
-                </div>
-                <div id="ecran-2" class="carrousel_ecran" alt="image ecran 4">
-                    <figure>
-                        <img src="/public/img/image/image 10.webp" alt="">
-                        <figcaption>Vue de côté du M4A3E8
-                            Sherman</figcaption>
-                    </figure>
-                </div>
-                <div id="ecran-4" class="carrousel_ecran">
-                <figure>
-                     <img src="/public/img/image/image 11.webp" alt="image ecran 4">
-                     <figcaption>Vue de derrière du M4A3E8
-                        Sherman</figcaption>    
-                    </figure>
-                </div>
+            </body>
+        </html>
         </div>
      </div>
      <a href="/fr/m4a3e8.html" class="image-button" >

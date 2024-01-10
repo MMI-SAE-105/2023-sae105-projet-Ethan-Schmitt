@@ -159,15 +159,14 @@ header h3 {
     display: grid;
     place-content: center;
     z-index: 100    ;
+    overflow: hidden;
   }
   .header_menuBtn {
     position: relative;
     z-index: 100;
   }
 
-  .noscroll body {
-     overflow: hidden;
-  }
+ 
   
   button {
     background-color: transparent; /* rend le bouton transparent */
@@ -232,3 +231,8 @@ li  {
     margin-top: 5px;
   }
   [x-cloak] { display: none; }
+
+  .noscroll {
+    overflow: hidden;
+    height: 100%; /* Ajoutez cette ligne si le défilement continue */
+}
