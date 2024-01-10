@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OLLHpiQA)
 - NOM : Schmitt
 - PRÉNOM : Ethan 
-- URL du site :
+- URL du site :https://shermanlegends.ethan-schmitt.fr/fr/
 - URL FIGMA :https://www.figma.com/file/eQ9RPbUMmW25KGlCe5AW8P/Maquettes-projet-individuel-%E2%80%94-Ethan-Schmitt?type=design&node-id=1605%3A1163&mode=design&t=cFQIJLkJlkzkOSRQ-1
 
 # Structure de départ pour le projet individuel.
