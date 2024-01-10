@@ -26,7 +26,7 @@ header::before {
     bottom: 0;
     left: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.23%, #FFF 146.44%);
-    background: rgba(47, 54, 180, 0.22);
+    background: rgba(114, 47, 180, 0.22);
     z-index: 0;
 }
 

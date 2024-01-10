@@ -233,12 +233,3 @@ li  {
   }
   [x-cloak] { display: none; }
 
-
-  .header-page1 {
-    background-image: url('/public/img/image/Brad-Pitt.webp');
-    
-}
-
-.header-page2 {
-    background-image: url('/public/img/image/02\ 2.png');
-}
