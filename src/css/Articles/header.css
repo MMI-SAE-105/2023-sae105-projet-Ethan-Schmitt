@@ -25,7 +25,7 @@ header::before {
     bottom: 0;
     left: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.23%, #FFF 146.44%);
-    background: rgba(1, 49, 180, 0.379);
+    background: rgba(0, 28, 104, 0.616);
     z-index: 0;
 }
 
@@ -43,7 +43,7 @@ header::before {
 header h1 {
     color: #FFC233;
     font-family: "Dela Gothic One", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     line-height: 100%;
     width: 243px;
@@ -54,8 +54,10 @@ header h1 {
    display: flex;
    margin-left: 20px;
    margin-bottom: -10px;
-   font-weight: 400;
+   font-weight: 100;
    line-height: 100%; /* 40px */
+   width: 366px;
+ 
     
 }
 
@@ -95,14 +97,14 @@ header h2 {
 
 @media (max-width: 600px) {
     header h1 {
-        font-size: 40px; /* Rendre le texte plus petit sur les petits écrans */
+        font-size: 35px; /* Rendre le texte plus petit sur les petits écrans */
     }
 }
 
 
 @media (max-width: 600px) {
     header h3  {
-        font-size: 40px; /* Rendre le texte plus petit sur les petits écrans */
+        font-size: 35px; /* Rendre le texte plus petit sur les petits écrans */
     }
 }
 
@@ -238,6 +240,16 @@ li  {
     
 }
 
+.header-page3 {
+    background-image: url('/public/img/image/orchestre.webp');
+}
+
 .header-page2 {
-    background-image: url('/public/img/image/02\ 2.png');
+    background-image: url('/public/img/image/combat\ tank.webp');
+}
+.header-page4{
+    background-image: url('/public/img/image/uicide-squad-photo-david-ayer-960819.webp');
+}
+.header-page5 {
+    background-image: url('/public/img/image/bd.webp');
 }
