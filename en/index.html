@@ -17,6 +17,9 @@
     <header  @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
         :class="{ 'header--atTop' : !atTop }" class="header">  
         <img src="/public/img/logo/Sherman Legends 1.png" alt="logo" id="logo">
+        <a href="/fr/index.html">
+            <img src="/public/img/logo/Great Britain.png" alt="logo" class="langue2">
+        </a>
         <button @click="menuIsOpen = !menuIsOpen"> <img src="/public/img/logo/menu-open.png" alt="menu" id="menu"></button>
             <nav x-show="menuIsOpen" @click.away="menuIsOpen = false" x-transition.duration.800ms class="halouil" x-cloak>
                <ul>
