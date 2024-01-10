@@ -253,11 +253,9 @@ header p {
     flex-shrink: 0;
     z-index: 1;
    display: flex;
-   margin-left: 20px;
    margin-bottom: -490px;
    font-weight: 100;
    line-height: 100%; /* 40px */
-   width: 366px;
    margin-left: 70px;
    
 }
