@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''"></html>
+<html lang="en" x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comprendre notre monde à travers les mots du Sergent Wardaddy</title>
+    <title>Understanding our world through the words of Sergeant Wardaddy</title>
     <link rel="stylesheet" href="/src/css/Articles/header.css">
     <link rel="stylesheet" href="/src/css/Articles/main.css">
     <link rel="stylesheet" href="/src/css/Articles/footer.css">
@@ -16,58 +16,59 @@
 <body>
   <header class="header-page1" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
     :class="{ 'header--atTop' : !atTop }" class="header">  
-        <a href="/fr/index.html">
+        <a href="/en/index.html">
             <img src="/public/img/logo/Sherman Legends 1.png" alt="logo" id="logo">
         </a>
         <button @click="menuIsOpen = !menuIsOpen"> <img src="/public/img/logo/menu-open.png" alt="menu" id="menu"></button>
         <nav x-show="menuIsOpen" @click.away="menuIsOpen = false" x-transition.duration.800ms class="halouil" x-cloak>
        <ul>
             <img src="/public/img/logo/Sherman Legends 1.png" alt="fet" id="fet">
-        <li><a href="/fr/m4a3e8.html" id="dlc">Le M4A3E8 Sherman</a></li>
+        <li><a href="/en/m4a3e8.html" id="dlc">The M4A3E8 Sherman</a></li>
             <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
             <li @click="isSubOpen = !isSubOpen">
                 <a href="#section2" id="dlc">Article > </a></li>
             <ul x-show="isSubOpen" @click.away="isSubOpen = false"  x-transition.duration.800ms>
-                <li id="li2"><a href="/fr/comprendre.html" id="dlc2">Comprendre notre monde à travers les mots du Sergent Wardaddy</a></li>
+                <li id="li2"><a href="/en/comprendre.html" id="dlc2">Understanding our world through the words of Sergeant Wardaddy</a></li>
                 <br>
-                <li id="li2"><a href="/fr/fury.html" id="dlc2"> Fury : Une immersion brutale dans les combats de tanks </a></li>
+                <li id="li2"><a href="/en/fury.html" id="dlc2">Fury: A brutal immersion in tank combat</a></li>
                 <br>
-                <li id="li2"><a href="/fr/norman.html" id="dlc2">‘Norman’ de Steven Price : Une symphonie de courage </a></li>
+                <li id="li2"><a href="/en/norman.html" id="dlc2">'Norman' by Steven Price: A symphony of courage</a></li>
                   <br>
-                  <li id="li2"><a href="/fr/david.html" id="dlc2">David Ayer : De la Rue à la Gloire</a></li>
+                  <li id="li2"><a href="/en/david.html" id="dlc2">David Ayer: From the Street to Glory</a></li>
                     <br>
-                    <li id="li2"><a href="/fr/machine.html" id="dlc2">Machine de Guerre Tome 3 : Un Tourbillon de Conflits</a></li>
+                    <li id="li2"><a href="/en/machine.html" id="dlc2">War Machine Volume 3: A Whirlwind of Conflicts</a></li>
                       <br>
                 </ul>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/frisechrono.html" id="dlc">Frise chronologique</a></li>
+                <li><a href="/en/timeline.html" id="dlc">Timeline</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/autresprojet.html" id="dlc">Autres projet</a></li>
+                <li><a href="/en/autresprojet.html" id="dlc">Other projects</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/autrefilms.html" id="dlc">Autres Films</a></li>
+                <li><a href="/en/othermovies.html" id="dlc">Other Movies</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/apropos.html" id="dlc">A propos</a></li>
+                <li><a href="/en/about.html" id="dlc">About</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/contact.html" id="dlc">Contact</a></li>
+                <li><a href="/en/contact.html" id="dlc">Contact</a></li>
+                
     </nav>
-        <h1>Comprendre notre monde à travers les mots du Sergent Wardaddy</h1>
+        <h1>Understanding our world through the words of Sergeant Wardaddy</h1>
         </header>
         <main>
             <img src="public/img/Barre de style.png" alt="barre" id="barre">
-            <p id="intro">Dans le film “Fury”, le Sergent Wardaddy, interprété par Brad Pitt, prononce une phrase très forte : “Les idéaux sont pacifiques. L’Histoire est violente.” Cette citation, bien que courte est pleine de sens nous fait réfléchir sur la difficulté malgré notre bonne volonté de maintenir un monde stable et paisible.</p>
+            <p id="intro">In the movie "Fury," Sergeant Wardaddy, played by Brad Pitt, utters a very powerful phrase: "Ideals are peaceful. History is violent." This quote, although short, is full of meaning and makes us reflect on the difficulty, despite our good intentions, of maintaining a stable and peaceful world.</p>
             <img src="/public/img/image/Equipe.webp" >
-            <h1>Les idéaux sont pacifiques</h1>
-            <p>La première partie, <strong> “Les idéaux sont pacifiques”</strong>, montre que les pensée et les objectifs que nous avons en tant personne ou en tant que société sont souvent pacifiques. Nous voulons la paix, la justice, l’égalité et la liberté. Ces idéaux montrent notre désir d’un monde meilleur et plus juste. Et depuis le début de l’histoire de l’humanité, l’humain à toujours recherché par divers moyens la paix. Malheureusement, ces pensées bien que des meilleures intentions qu’il soit sont souvent en contradiction avec la réalité. Nous vivons dans un monde où la violence et l’injustice existent, et où les conflits sont fréquents. C’est là que la deuxième partie de la citation entre en jeu.</p>
-            <h2>L’Histoire est violente</h2>
-            <p> <strong>“L’Histoire est violente”</strong> est une réalité brutale. L’histoire humaine est marquée par des guerres, des conflits et des violences de toutes sortes. Même si nous voulons la paix, nous ne pouvons pas ignorer, que la violence a souvent été utilisée comme un moyen d’atteindre des objectif politiques ou économiques et que quoi qu’ils arrivent il nous ai impossible de maintenir une paix total dans le monde. Même s’il n’y a plus de guerre, l’injustices et les meurtres restent. Dans le contexte du film “Fury”, qui se déroule pendant la Seconde Guerre mondiale, cette citation prend un sens particulier. Malgré les idéaux de paix et de liberté pour lesquels les Alliés se battaient, ils étaient engagés dans une guerre brutale et violente.</p>
-            <p> <strong>En conclusion</strong>, la citation du Sergent Wardaddy offre une bonne réflexion sur la contradiction de nos idéaux et de notre histoire. Elle nous rappelle que même si nous aspirons à des idéaux pacifiques, nous devons faire face à la réalité souvent violente de notre monde. C’est un excellent rappel de l’importance de travailler sans relâche pour réaliser nos idéaux pacifiques, tout en reconnaissant et en affrontant les réalités violentes de notre histoire.</p>
-            <h3><strong>À ne pas manquer :</strong></h3>
+            <h1>Ideals are peaceful</h1>
+            <p>The first part, <strong>"Ideals are peaceful"</strong>, shows that the thoughts and goals we have as individuals or as a society are often peaceful. We want peace, justice, equality, and freedom. These ideals reflect our desire for a better and more just world. And since the beginning of human history, humans have always sought peace through various means. Unfortunately, these thoughts, despite their best intentions, are often in contradiction with reality. We live in a world where violence and injustice exist, and conflicts are frequent. This is where the second part of the quote comes into play.</p>
+            <h2>History is violent</h2>
+            <p><strong>"History is violent"</strong> is a brutal reality. Human history is marked by wars, conflicts, and violence of all kinds. Even though we desire peace, we cannot ignore that violence has often been used as a means to achieve political or economic objectives, and that no matter what happens, it is impossible for us to maintain total peace in the world. Even if there is no more war, injustice and murder remain. In the context of the movie "Fury," which takes place during World War II, this quote takes on a particular meaning. Despite the ideals of peace and freedom for which the Allies fought, they were engaged in a brutal and violent war.</p>
+            <p><strong>In conclusion</strong>, Sergeant Wardaddy's quote offers a good reflection on the contradiction between our ideals and our history. It reminds us that even though we aspire to peaceful ideals, we must confront the often violent reality of our world. It is an excellent reminder of the importance of working tirelessly to achieve our peaceful ideals while recognizing and confronting the violent realities of our history.</p>
+            <h3><strong>Don't miss:</strong></h3>
             <div class="center">
-            <a href="/fr/david.html">
-                <img src="/public/img/logo/Component 14.png" alt="block" class="block">
+            <a href="/en/david.html">
+                <img src="/public/img/logo/David Ayer english version.png" alt="block" class="block">
             </a>
-            <a href="/fr/fury.html">
-                <img src="/public/img/logo/A ne pas manquer Fury.png" alt="block" class="block">
+            <a href="/en/fury.html">
+                <img src="/public/img/logo/Fury english version.png" alt="block" class="block">
             </a>
         </div>
     </main>
@@ -77,7 +78,7 @@
         <p id="expo">Sherman <br>Legends</p>        
         <img src="/public/img/logo/logo-iut.png" alt="iut" id="iut">
         </div>
-        <p id="suivi">suivez-moi</p>
+        <p id="suivi">follow me</p>
         <div class="footer-logos">
             <a href="https://www.linkedin.com/in/ethan-schmitt-a0ab1b299/">
               <img src="/public/img/logo/LinkedIn.png" alt="link" id="lg">
@@ -92,13 +93,13 @@
         <p id="nume">MENU</p>
         <div class="container">
             <div class="left">
-              <a href="/fr/glossaire.html">Glossaire</a>
+              <a href="/en/glossaire.html">Glossary</a>
              </div>
              <div class="center">
-                 <a href="/fr/mentionlegales.html">Mentions légales</a>
+                 <a href="/en/mentionlegales.html">Legal Mentions</a>
              </div>
             <div class="right">
-              <a href="/fr/contact.html">CONTACT</a>
+              <a href="/en/contact.html">CONTACT</a>
             </div>
           </div>
           <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
@@ -107,13 +108,13 @@
             <img src="/public/img/logo/Visit.png" alt="visit" id="vecteur">
             </div>
             <div class="right2">
-              <p>Département MMI, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
+              <p>MMI Department, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
             </div>
           </div>
           <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
     <div class="container3">
             <div class="left3">
-              <p>© 2024 Sherman Legends. Tous droits réservés.</p>
+              <p>© 2024 Sherman Legends. All rights reserved.</p>
             </div>
           </div>
         </footer>

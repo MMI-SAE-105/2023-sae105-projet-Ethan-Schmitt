@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr"x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''">
+<html lang="en" x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le char américain M4A3E8 Sherman</title>
+    <title>The American M4A3E8 Sherman Tank</title>
     <link rel="stylesheet" href="/src/css/m4a3e8/header.css">
     <link rel="stylesheet" href="/src/css/m4a3e8/main.css">
     <link rel="stylesheet" href="/src/css/index/footer.css">
@@ -16,69 +16,70 @@
 <body>
   <header  @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
     :class="{ 'header--atTop' : !atTop }" class="header">  
-        <a href="/fr/index.html">
+        <a href="/en/index.html">
             <img src="/public/img/logo/Sherman Legends 1.png" alt="logo" id="logo">
         </a>
         <button @click="menuIsOpen = !menuIsOpen"> <img src="/public/img/logo/menu-open.png" alt="menu" id="menu"></button>
         <nav x-show="menuIsOpen" @click.away="menuIsOpen = false" x-transition.duration.800ms class="halouil" x-cloak>
        <ul>
             <img src="/public/img/logo/Sherman Legends 1.png" alt="fet" id="fet">
-        <li><a href="/fr/m4a3e8.html" id="dlc">Le M4A3E8 Sherman</a></li>
+        <li><a href="/en/m4a3e8.html" id="dlc">The M4A3E8 Sherman</a></li>
             <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
             <li @click="isSubOpen = !isSubOpen">
                 <a href="#section2" id="dlc">Article > </a></li>
             <ul x-show="isSubOpen" @click.away="isSubOpen = false"  x-transition.duration.800ms>
-                <li id="li2"><a href="/fr/comprendre.html" id="dlc2">Comprendre notre monde à travers les mots du Sergent Wardaddy</a></li>
+                <li id="li2"><a href="/en/comprendre.html" id="dlc2">Understanding Our World Through Sergeant Wardaddy's Words</a></li>
                 <br>
-                <li id="li2"><a href="/fr/fury.html" id="dlc2"> Fury : Une immersion brutale dans les combats de tanks </a></li>
+                <li id="li2"><a href="/en/fury.html" id="dlc2">Fury: A Brutal Immersion in Tank Combat</a></li>
                 <br>
-                <li id="li2"><a href="/fr/norman.html" id="dlc2">‘Norman’ de Steven Price : Une symphonie de courage </a></li>
+                <li id="li2"><a href="/en/norman.html" id="dlc2">'Norman' by Steven Price: A Symphony of Courage</a></li>
                   <br>
-                  <li id="li2"><a href="/fr/david.html" id="dlc2">David Ayer : De la Rue à la Gloire</a></li>
+                  <li id="li2"><a href="/en/david.html" id="dlc2">David Ayer: From the Streets to Glory</a></li>
                     <br>
-                    <li id="li2"><a href="/fr/machine.html" id="dlc2">Machine de Guerre Tome 3 : Un Tourbillon de Conflits</a></li>
+                    <li id="li2"><a href="/en/machine.html" id="dlc2">War Machine Volume 3: A Whirlwind of Conflicts</a></li>
                       <br>
                 </ul>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/frisechrono.html" id="dlc">Frise chronologique</a></li>
+                <li><a href="/en/timeline.html" id="dlc">Timeline</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/autresprojet.html" id="dlc">Autres projet</a></li>
+                <li><a href="/en/autresprojet.html" id="dlc">Other projects</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/autrefilms.html" id="dlc">Autres Films</a></li>
+                <li><a href="/en/othermovies.html" id="dlc">Other Movies</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/apropos.html" id="dlc">A propos</a></li>
+                <li><a href="/en/about.html" id="dlc">About</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/contact.html" id="dlc">Contact</a></li>
+                <li><a href="/en/contact.html" id="dlc">Contact</a></li>
+                
     </nav>
-        <h1>Le char américain M4A3E8 Sherman</h1>
+        <h1>The American M4A3E8 Sherman Tank</h1>
         </header>
         <main>
             <img src="public/img/Barre de style.png" alt="barre" id="barre">
-            <p id="intro">Le <strong> M4A3E8 Sherman </strong>, également connu sous le nom de Easy Eight, est l’un des chars les plus emblématiques de la Seconde Guerre mondiale. Il a été produit en grande quantité, avec près de cinquante mille exemplaires (toutes versions confondues).</p>
+            <p id="intro">The <strong>M4A3E8 Sherman</strong>, also known as the Easy Eight, is one of the most iconic tanks of World War II. It was produced in large quantities, with nearly fifty thousand units (all versions combined).</p>
             <img src="/public/img/image/Sherman.webp" >
-            <h1>Caractéristiques techniques : </h1>
-            <div class="info-char"style="margin-bottom: 12px;"><strong> Type : </strong>Char moyen  </div>
-            <div class="info-char"style="margin-bottom: 12px;"><strong>Équipage :</strong> 5 (commandant, tireur, chargeur, conducteur, assistant conducteur/mitrailleur de proue)</div>
-            <div class="info-char"style="margin-bottom: 12px;"><strong>Longueur :</strong> 5,89 m</div>
-            <div class="info-char"style="margin-bottom: 12px;"><strong>Largeur :</strong> 2,62 m</div>
-            <div class="info-char"style="margin-bottom: 12px;"><strong>Hauteur :</strong> 2,74 m</div>
-            <div class="info-char"style="margin-bottom: 12px;"><strong>Masse au combat :</strong> 27,2 t</div>
-            <div class="info-char"style="margin-bottom: 12px;"><strong>Armement principal :</strong> Un canon M3 de 75 mm</div>
-            <div class="info-char"style="margin-bottom: 12px;"><strong>Armement secondaire :</strong> Une mitrailleuse Browning 7,62 mm en proue ; 1 mitrailleuse Browning 7,62 mm coaxiale ; 1 mitrailleuse Browning M2 12,7 mm sur la tourelle (facultative)</div>
-            <div class="info-char"style="margin-bottom: 12px;"><strong>Moteur :</strong> Ford GAA V8 essence ; 450 hp (336 kW) à 2,600 rpm</div>
-            <div class="info-char"style="margin-bottom: 12px;"><strong>Vitesse sur route :</strong> 34 km/h</div>
-            <div class="info-char"style="margin-bottom: 12px;"><strong>Réservoir :</strong> 662 l</div>
-            <div class="info-char" style="margin-bottom: 12px;"><strong>Autonomie :</strong> 193 km</div>
-            <h2>Performances en bataille</h2>
-            <p>Le Sherman M4A3E8 a été largement utilisé par les Alliés pendant la Seconde Guerre mondiale. Il a été déployé dans presque tous les fronts d’opérations de la guerre, y compris la plupart de l’Afrique du Nord, la Russie, la plupart de l’Europe, les Indes orientales, les Philippines, de nombreuses îles du Pacifique et la Chine.
-                Malgré sa production massive et son utilisation généralisée, le Sherman à des défauts. Il était inférieur aux chars allemands comme le Tigre ou le Panther en termes de blindage et de puissance de feu. Cependant, il compensait ces défauts par sa fiabilité, sa facilité d’entretien et sa production en masse</p>
-            <h3><strong>À ne pas manquer :</strong></h3>
+            <h1>Technical Specifications:</h1>
+            <div class="info-char"style="margin-bottom: 12px;"><strong>Type:</strong> Medium Tank</div>
+            <div class="info-char"style="margin-bottom: 12px;"><strong>Crew:</strong> 5 (commander, gunner, loader, driver, assistant driver/bow machine gunner)</div>
+            <div class="info-char"style="margin-bottom: 12px;"><strong>Length:</strong> 5.89 m</div>
+            <div class="info-char"style="margin-bottom: 12px;"><strong>Width:</strong> 2.62 m</div>
+            <div class="info-char"style="margin-bottom: 12px;"><strong>Height:</strong> 2.74 m</div>
+            <div class="info-char"style="margin-bottom: 12px;"><strong>Combat Weight:</strong> 27.2 t</div>
+            <div class="info-char"style="margin-bottom: 12px;"><strong>Main Armament:</strong> One 75 mm M3 gun</div>
+            <div class="info-char"style="margin-bottom: 12px;"><strong>Secondary Armament:</strong> One 7.62 mm Browning machine gun in the bow; one coaxial 7.62 mm Browning machine gun; one optional 12.7 mm Browning M2 machine gun on the turret</div>
+            <div class="info-char"style="margin-bottom: 12px;"><strong>Engine:</strong> Ford GAA V8 gasoline; 450 hp (336 kW) at 2,600 rpm</div>
+            <div class="info-char"style="margin-bottom: 12px;"><strong>Top Speed on Road:</strong> 34 km/h</div>
+            <div class="info-char"style="margin-bottom: 12px;"><strong>Fuel Capacity:</strong> 662 l</div>
+            <div class="info-char" style="margin-bottom: 12px;"><strong>Range:</strong> 193 km</div>
+            <h2>Battle Performance</h2>
+            <p>The Sherman M4A3E8 was widely used by the Allies during World War II. It was deployed in almost all theaters of war, including most of North Africa, Russia, most of Europe, the East Indies, the Philippines, numerous Pacific islands, and China.
+                Despite its massive production and widespread use, the Sherman had its flaws. It was inferior to German tanks like the Tiger or Panther in terms of armor and firepower. However, it compensated for these shortcomings with its reliability, ease of maintenance, and mass production.</p>
+            <h3><strong>Don't Miss:</strong></h3>
             <div class="center">
-            <a href="/fr/david.html">
-                <img src="/public/img/logo/Component 14.png" alt="block" class="block">
+            <a href="/en/david.html">
+                <img src="/public/img/logo/David Ayer english version.png" alt="block" class="block">
             </a>
-            <a href="/fr/machine.html">
-                <img src="/public/img/logo/Component 13.png" alt="block" class="block">
+            <a href="/en/machine.html">
+                <img src="/public/img/logo/War Machine.png" alt="block" class="block">
             </a>
         </div>
     </main>
@@ -88,7 +89,7 @@
         <p id="expo">Sherman <br>Legends</p>        
         <img src="/public/img/logo/logo-iut.png" alt="iut" id="iut">
         </div>
-        <p id="suivi">suivez-moi</p>
+        <p id="suivi">follow me</p>
         <div class="footer-logos">
             <a href="https://www.linkedin.com/in/ethan-schmitt-a0ab1b299/">
               <img src="/public/img/logo/LinkedIn.png" alt="link" id="lg">
@@ -102,29 +103,29 @@
         </div>
         <p id="nume">MENU</p>
         <div class="container">
-            <div class="left">
-              <a href="/fr/glossaire.html">Glossaire</a>
-             </div>
-             <div class="center">
-                 <a href="/fr/mentionlegales.html">Mentions légales</a>
-             </div>
-            <div class="right">
-              <a href="/fr/contact.html">CONTACT</a>
-            </div>
+          <div class="left">
+            <a href="/en/glossaire.html">Glossary</a>
+           </div>
+           <div class="center">
+               <a href="/en/mentionlegales.html">Legal Notice</a>
+           </div>
+          <div class="right">
+            <a href="/en/contact.html">CONTACT</a>
           </div>
+        </div>
           <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
         <div class="container2">
             <div class="left2">
             <img src="/public/img/logo/Visit.png" alt="visit" id="vecteur">
             </div>
             <div class="right2">
-              <p>Département MMI, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
+              <p>MMI Department, 4 Pl. Lucien Tharradin, 25200 Montbéliard, France</p>
             </div>
           </div>
           <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
     <div class="container3">
             <div class="left3">
-              <p>© 2024 Sherman Legends. Tous droits réservés.</p>
+              <p>© 2024 Sherman Legends. All rights reserved.</p>
             </div>
           </div>
         </footer>

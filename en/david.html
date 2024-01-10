@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''">
+<html lang="en" x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> David Ayer : De la Rue à la Gloire</title>
+    <title> David Ayer: From the Streets to Glory</title>
     <link rel="stylesheet" href="/src/css/Articles/header.css">
     <link rel="stylesheet" href="/src/css/Articles/main.css">
     <link rel="stylesheet" href="/src/css/Articles/footer.css">
@@ -16,65 +16,66 @@
 <body>
   <header class="header-page4" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
     :class="{ 'header--atTop' : !atTop }" class="header">  
-        <a href="/fr/index.html">
+        <a href="/en/index.html">
             <img src="/public/img/logo/Sherman Legends 1.png" alt="logo" id="logo">
         </a>
         <button @click="menuIsOpen = !menuIsOpen"> <img src="/public/img/logo/menu-open.png" alt="menu" id="menu"></button>
         <nav x-show="menuIsOpen" @click.away="menuIsOpen = false" x-transition.duration.800ms class="halouil" x-cloak>
        <ul>
             <img src="/public/img/logo/Sherman Legends 1.png" alt="fet" id="fet">
-        <li><a href="/fr/m4a3e8.html" id="dlc">Le M4A3E8 Sherman</a></li>
+        <li><a href="/en/m4a3e8.html" id="dlc">The M4A3E8 Sherman</a></li>
             <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
             <li @click="isSubOpen = !isSubOpen">
                 <a href="#section2" id="dlc">Article > </a></li>
             <ul x-show="isSubOpen" @click.away="isSubOpen = false"  x-transition.duration.800ms>
-                <li id="li2"><a href="/fr/comprendre.html" id="dlc2">Comprendre notre monde à travers les mots du Sergent Wardaddy</a></li>
+                <li id="li2"><a href="/en/comprendre.html" id="dlc2">Understanding Our World Through the Words of Sergeant Wardaddy</a></li>
                 <br>
-                <li id="li2"><a href="/fr/fury.html" id="dlc2"> Fury : Une immersion brutale dans les combats de tanks </a></li>
+                <li id="li2"><a href="/en/fury.html" id="dlc2">Fury: A Brutal Immersion into Tank Battles</a></li>
                 <br>
-                <li id="li2"><a href="/fr/norman.html" id="dlc2">‘Norman’ de Steven Price : Une symphonie de courage </a></li>
+                <li id="li2"><a href="/en/norman.html" id="dlc2">'Norman' by Steven Price: A Symphony of Courage</a></li>
                   <br>
-                  <li id="li2"><a href="/fr/david.html" id="dlc2">David Ayer : De la Rue à la Gloire</a></li>
+                  <li id="li2"><a href="/en/david.html" id="dlc2">David Ayer: From the Streets to Glory</a></li>
                     <br>
-                    <li id="li2"><a href="/fr/machine.html" id="dlc2">Machine de Guerre Tome 3 : Un Tourbillon de Conflits</a></li>
+                    <li id="li2"><a href="/en/machine.html" id="dlc2">War Machine Volume 3: A Whirlwind of Conflicts</a></li>
                       <br>
                 </ul>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/frisechrono.html" id="dlc">Frise chronologique</a></li>
+                <li><a href="/en/timeline.html" id="dlc">Timeline</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/autresprojet.html" id="dlc">Autres projet</a></li>
+                <li><a href="/en/autresprojet.html" id="dlc">Other projects</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/autrefilms.html" id="dlc">Autres Films</a></li>
+                <li><a href="/en/othermovies.html" id="dlc">Other Movies</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/apropos.html" id="dlc">A propos</a></li>
+                <li><a href="/en/about.html" id="dlc">About</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/contact.html" id="dlc">Contact</a></li>
+                <li><a href="/en/contact.html" id="dlc">Contact</a></li>
+                
     </nav>
-        <h1>David Ayer : De la Rue à la Gloire</h1>
+        <h1>David Ayer: From the Streets to Glory</h1>
         </header>
         <main>
             <img src="public/img/Barre de style.png" alt="barre" id="barre">
-            <p id="intro">David Ayer, né le 18 janvier 1968 à Champaign aux États-Unis, est un réalisateur, scénariste et producteur américain. Son parcours est marqué par une détermination sans faille et une passion indéniable pour le cinéma</p>
+            <p id="intro">David Ayer, born on January 18, 1968 in Champaign, USA, is an American director, screenwriter, and producer. His journey is marked by unwavering determination and undeniable passion for cinema.</p>
             <img src="/public/img/image/David.webp" >
-            <h1>Jeunesses et débuts</h1>
-            <p>David Ayer passe son adolescence dans le quartier difficile de South Central à Los Angeles. Après avoir été mis à la porte de sa famille, il a vécu avec son cousin à Los Angeles. Sont vécu dans les quartiers de South Central ont été une source d'inspiration pour ses films.
-                À 18 ans, il rejoint la marine américaine en tant qu’officier sonar sur un sous-marin. Son expérience dans la marine a inspiré son premier scénario de film, U-5711</p>
-            <h2>Carrière à Hollywood</h2>
-            <p>Après son service dans la marine, David Ayer décide de devenir scénariste, en grande partie sur la suggestion de son ami et mentor Wesley Strick. Son premier scénario de long métrage, U-571, est réalisé par Jonathan Mostow et sort en 20001. Le film a relancé le genre du film de sous-marin.
-                En 2001, le cinéma a été témoin de la montée en puissance du scénariste David Ayer. Il a fait ses débuts avec le film “Training Day”, réalisé par Antoine Fuqua. Le film, qui met en scène un jeune policier idéaliste (Ethan Hawke) confronté à un partenaire corrompu (Denzel Washington), a été salué par la critique. La performance de Washington lui a valu l’Oscar du meilleur acteur en 200212.
-                La même année, Ayer a démontré sa polyvalence en écrivant le scénario de “Fast & Furious: Tokyo Drift”, réalisé par Rob Cohen3. Le film, qui se déroule dans l’univers urbain des courses de rue, a connu un succès retentissant. Cela a confirmé le talent d’Ayer pour raconter des histoires captivantes mettant en scène des anti-héros attachants45. Ces succès ont solidement établi Ayer comme une force créative à Hollywood</p>
-            <h4>Passage à la réalisation</h4>
-            <p> En 2005, David Ayer réalise son premier long métrage, Bad Times, avec Christian Bale. Le film est inspiré de sa enfance et de sa jeunesse. Malgré des critiques mitigées, le film a été rentable1. Par la suite, il a réalisé plusieurs autres films, dont “Fury” qui a été salué comme une œuvre sublime montrant que la guerre de 39-45 n’était pas du tout idiote2.
-                <br>Controverses Cependant, la réalisation de “Suicide Squad” en 2016 a été une expérience difficile pour Ayer. Malgré des retours assez mitigés de la communauté, le film a fait des millions de dollars au box-office. Cependant, Ayer a exprimé son mécontentement face au résultat final du film, déclarant dans une interview que le film lui avait “brisé le cœur” et que son idée de rêve s’était rapidement transformée en cauchemar.
+            <h1>Early Life and Beginnings</h1>
+            <p>David Ayer spent his adolescence in the tough neighborhood of South Central in Los Angeles. After being kicked out of his family, he lived with his cousin in Los Angeles. His experiences in the neighborhoods of South Central were a source of inspiration for his films.
+                At the age of 18, he joined the US Navy as a sonar officer on a submarine. His experience in the Navy inspired his first film screenplay, U-5711.</p>
+            <h2>Hollywood Career</h2>
+            <p>After his service in the Navy, David Ayer decided to become a screenwriter, largely on the suggestion of his friend and mentor Wesley Strick. His first feature film screenplay, U-571, was directed by Jonathan Mostow and released in 20001. The film revitalized the submarine film genre.
+                In 2001, Hollywood witnessed the rise of screenwriter David Ayer. He made his debut with the film "Training Day," directed by Antoine Fuqua. The film, which features an idealistic young police officer (Ethan Hawke) confronted with a corrupt partner (Denzel Washington), was critically acclaimed. Washington's performance earned him the Academy Award for Best Actor in 200212.
+                The same year, Ayer demonstrated his versatility by writing the screenplay for "Fast & Furious: Tokyo Drift," directed by Rob Cohen3. The film, set in the urban world of street racing, was a resounding success. This confirmed Ayer's talent for telling captivating stories featuring endearing anti-heroes45. These successes firmly established Ayer as a creative force in Hollywood.</p>
+            <h4>Transition to Directing</h4>
+            <p>In 2005, David Ayer directed his first feature film, Bad Times, starring Christian Bale. The film was inspired by his childhood and youth. Despite mixed reviews, the film was profitable1. He has since directed several other films, including "Fury," which was hailed as a sublime work showing that World War II was not at all foolish2.
+                <br>Controversies However, directing "Suicide Squad" in 2016 was a challenging experience for Ayer. Despite fairly mixed feedback from the community, the film made millions of dollars at the box office. However, Ayer expressed his dissatisfaction with the final result of the film, stating in an interview that the film had "broken his heart" and that his dream idea had quickly turned into a nightmare.
                 </p>
-            <p><strong>David Ayer</strong> est un exemple de comment les expériences de vie peuvent façonner une carrière artistique. Son parcours, de son enfance difficile à Los Angeles à son service dans la marine américaine, a influencé son travail en tant que scénariste et réalisateur. Ayer a su transformer ses expériences personnelles en histoires qui ont touché le public du monde entier. Malgré quelque problème et défis, notamment avec “Suicide Squad”, Ayer reste un acteur important à Hollywood.</p>
-            <h3><strong>À ne pas manquer :</strong></h3>
+            <p><strong>David Ayer</strong> is an example of how life experiences can shape an artistic career. His journey, from his difficult childhood in Los Angeles to his service in the US Navy, has influenced his work as a screenwriter and director. Ayer has been able to transform his personal experiences into stories that have touched audiences worldwide. Despite some problems and challenges, particularly with "Suicide Squad," Ayer remains an important player in Hollywood.</p>
+            <h3><strong>Don't Miss:</strong></h3>
             <div class="center">
-            <a href="/fr/norman.html">
-                <img src="/public/img/logo/Ne pas manquer Norman.png" alt="block" class="block">
+            <a href="/en/norman.html">
+                <img src="/public/img/logo/Norman english version.png" alt="block" class="block">
             </a>
-            <a href="/fr/m4a3e8.html">
-                <img src="/public/img/image/Char.png" alt="block" class="block">
+            <a href="/en/m4a3e8.html">
+                <img src="/public/img/logo/m4a3e8 english version.png" alt="block" class="block">
             </a>
         </div>
     </main>
@@ -84,7 +85,7 @@
         <p id="expo">Sherman <br>Legends</p>        
         <img src="/public/img/logo/logo-iut.png" alt="iut" id="iut">
         </div>
-        <p id="suivi">suivez-moi</p>
+        <p id="suivi">follow me</p>
         <div class="footer-logos">
             <a href="https://www.linkedin.com/in/ethan-schmitt-a0ab1b299/">
               <img src="/public/img/logo/LinkedIn.png" alt="link" id="lg">
@@ -98,29 +99,29 @@
         </div>
         <p id="nume">MENU</p>
         <div class="container">
-            <div class="left">
-              <a href="/fr/glossaire.html">Glossaire</a>
-             </div>
-             <div class="center">
-                 <a href="/fr/mentionlegales.html">Mentions légales</a>
-             </div>
-            <div class="right">
-              <a href="/fr/contact.html">CONTACT</a>
-            </div>
+          <div class="left">
+            <a href="/en/glossaire.html">Glossary</a>
+           </div>
+           <div class="center">
+               <a href="/en/mentionlegales.html">Legal Notice</a>
+           </div>
+          <div class="right">
+            <a href="/en/contact.html">CONTACT</a>
           </div>
+        </div>
           <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
         <div class="container2">
             <div class="left2">
             <img src="/public/img/logo/Visit.png" alt="visit" id="vecteur">
             </div>
             <div class="right2">
-              <p>Département MMI, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
+              <p>MMI Department, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
             </div>
           </div>
           <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
     <div class="container3">
             <div class="left3">
-              <p>© 2024 Sherman Legends. Tous droits réservés.</p>
+              <p>© 2024 Sherman Legends. All rights reserved.</p>
             </div>
           </div>
         </footer>

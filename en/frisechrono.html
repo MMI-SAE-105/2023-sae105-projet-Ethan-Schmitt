@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''"></html>
+<html lang="en" x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frise chronologique</title>
+    <title>Timeline</title>
     <link rel="stylesheet" href="/src/css/Autres/header.css">
     <link rel="stylesheet" href="/src/css/Autres/main.css">
     <link rel="stylesheet" href="/src/css/Autres/footer.css">
@@ -16,73 +16,73 @@
 <body>
   <header  @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
     :class="{ 'header--atTop' : !atTop }" class="header">  
-        <a href="/fr/index.html">
+        <a href="/en/index.html">
             <img src="/public/img/logo/Sherman Legends 1.png" alt="logo" id="logo">
         </a>
         <button @click="menuIsOpen = !menuIsOpen"> <img src="/public/img/logo/menu-open.png" alt="menu" id="menu"></button>
         <nav x-show="menuIsOpen" @click.away="menuIsOpen = false" x-transition.duration.800ms class="halouil" x-cloak>
        <ul>
             <img src="/public/img/logo/Sherman Legends 1.png" alt="fet" id="fet">
-        <li><a href="/fr/m4a3e8.html" id="dlc">Le M4A3E8 Sherman</a></li>
+        <li><a href="/en/m4a3e8.html" id="dlc">The M4A3E8 Sherman</a></li>
             <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
             <li @click="isSubOpen = !isSubOpen">
                 <a href="#section2" id="dlc">Article > </a></li>
             <ul x-show="isSubOpen" @click.away="isSubOpen = false"  x-transition.duration.800ms>
-                <li id="li2"><a href="/fr/comprendre.html" id="dlc2">Comprendre notre monde à travers les mots du Sergent Wardaddy</a></li>
+                <li id="li2"><a href="/en/comprendre.html" id="dlc2">Understanding our world through the words of Sergeant Wardaddy</a></li>
                 <br>
-                <li id="li2"><a href="/fr/fury.html" id="dlc2"> Fury : Une immersion brutale dans les combats de tanks </a></li>
+                <li id="li2"><a href="/en/fury.html" id="dlc2">Fury: A brutal immersion in tank combat</a></li>
                 <br>
-                <li id="li2"><a href="/fr/norman.html" id="dlc2">‘Norman’ de Steven Price : Une symphonie de courage </a></li>
+                <li id="li2"><a href="/en/norman.html" id="dlc2">'Norman' by Steven Price: A symphony of courage</a></li>
                   <br>
-                  <li id="li2"><a href="/fr/david.html" id="dlc2">David Ayer : De la Rue à la Gloire</a></li>
+                  <li id="li2"><a href="/en/david.html" id="dlc2">David Ayer: From the Street to Glory</a></li>
                     <br>
-                    <li id="li2"><a href="/fr/machine.html" id="dlc2">Machine de Guerre Tome 3 : Un Tourbillon de Conflits</a></li>
+                    <li id="li2"><a href="/en/machine.html" id="dlc2">War Machine Volume 3: A Whirlwind of Conflicts</a></li>
                       <br>
                 </ul>
             <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-            <li><a href="/fr/frisechrono.html" id="dlc">Frise chronologique</a></li>
+            <li><a href="/en/frisechrono.html" id="dlc">Timeline</a></li>
             <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-            <li><a href="/fr/autresprojet.html" id="dlc">Autres projet</a></li>
+            <li><a href="/en/autresprojet.html" id="dlc">Other Projects</a></li>
             <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-            <li><a href="/fr/autrefilms.html" id="dlc">Autres Films</a></li>
+            <li><a href="/en/autrefilms.html" id="dlc">Other Films</a></li>
             <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-            <li><a href="/fr/apropos.html" id="dlc">A propos</a></li>
+            <li><a href="/en/apropos.html" id="dlc">About</a></li>
             <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-            <li><a href="/fr/contact.html" id="dlc">Contact</a></li>
+            <li><a href="/en/contact.html" id="dlc">Contact</a></li>
             
            
     </nav>
-        <h1>Frise chronologique</h1>
+        <h1>Timeline</h1>
         </header>
         <main>
-          <p id="intro">Voici une frise chronologique qui répertorie des livres sur la seconde guerre mondiale. En cliquant sur les images vous aurez accès à leur page Amazon.</p>
+          <p id="intro">Here is a timeline that lists books about World War II. By clicking on the images, you will have access to their Amazon page.</p>
             <div class="separator"></div>
-             <a href="https://www.amazon.fr/Si-cest-homme-Primo-Levi/dp/2266022504/ref=sr_1_1?keywords=primo+levi+si+c%27est+un+homme&sr=8-1">
+             <a href="https://www.amazon.com/If-This-Man-Primo-Levi/dp/0684826801/ref=sr_1_1?keywords=primo+levi+if+this+is+a+man&qid=1579272079&sr=8-1">
                <img src="/public/img/image/1988.webp" alt="imgf2" class="imgf2">
             </a>
             <div class="background7"></div>
             <div class="separator"></div>
-            <a href="https://www.amazon.fr/Je-me-suis-%C3%A9vad%C3%A9-dAuschwitz/dp/2290324213/ref=sr_1_1?keywords=je+me+suis+evade+d%27auschwitz&sr=8-1">
+            <a href="https://www.amazon.com/Escape-Auschwitz-Remarkable-Stories-Survivors/dp/1789461944/ref=sr_1_1?keywords=escape+from+auschwitz&qid=1579272116&sr=8-1">
                  <img src="/public/img/image/2004.webp" alt="imgf2" class="imgf2">
                 </a>
             <div class="background8"></div>
               <div class="separator"></div>
-               <a href="https://www.amazon.fr/Sonderkommando-Dans-lenfer-chambres-gaz/dp/2253128910/ref=sr_1_1?keywords=shlomo+venezia&sr=8-1">
+               <a href="https://www.amazon.com/Sonderkommando-Shocking-Inside-Special-Squad/dp/1842120469/ref=sr_1_1?keywords=shlomo+venezia&qid=1579272147&sr=8-1">
                  <img src="/public/img/image/2009.webp" alt="imgf2" class="imgf2">
                 </a>
               <div class="background9"></div>
               <div class="separator"></div>
-               <a href="https://www.amazon.fr/Seconde-Guerre-mondiale-Antony-Beevor/dp/2253176451/ref=sr_1_1?keywords=la+seconde+guerre+mondiale+antony+beevor&sr=8-1">
+               <a href="https://www.amazon.com/Second-World-War-Antony-Beevor/dp/0316023744/ref=sr_1_1?keywords=the+second+world+war+antony+beevor&qid=1579272174&sr=8-1">
                  <img src="/public/img/image/2014.webp" alt="imgf2" class="imgf2">
                 </a>
               <div class="background10"></div>
               <div class="separator"></div>
-              <a href="https://www.amazon.fr/Infographie-Seconde-mondiale-l%C3%A9dition-d%C3%A9finitive/dp/2262097011/ref=sr_1_1?keywords=infographie+de+la+seconde+guerre+mondiale&sr=8-1">
+              <a href="https://www.amazon.com/Infographic-Guide-Second-World-War/dp/178131605X/ref=sr_1_1?keywords=infographic+guide+to+the+second+world+war&qid=1579272200&sr=8-1">
                  <img src="/public/img/image/2018.webp" alt="imgf2" class="imgf2">
                 </a>
               <div class="background11"></div>
               <div class="separator"></div>
-              <a href="https://www.amazon.fr/Machines-Guerre-Dream-Team/dp/2413012923/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=Dream+team+bd&sr=8-1">
+              <a href="https://www.amazon.com/War-Machines-Dream-Team/dp/1785863943/ref=sr_1_1?keywords=dream+team+graphic+novel&qid=1579272227&sr=8-1">
                  <img src="/public/img/image/2020.webp" alt="imgf2" class="imgf2">
                 </a>
               <div class="background12"></div>
@@ -94,7 +94,7 @@
     <p id="expo">Sherman <br>Legends</p>        
     <img src="/public/img/logo/logo-iut.png" alt="iut" id="iut">
     </div>
-    <p id="suivi">suivez-moi</p>
+    <p id="suivi">follow me</p>
     <div class="footer-logos">
         <a href="https://www.linkedin.com/in/ethan-schmitt-a0ab1b299/">
           <img src="/public/img/logo/LinkedIn.png" alt="link" id="lg">
@@ -109,13 +109,13 @@
     <p id="nume">MENU</p>
     <div class="container">
         <div class="left">
-          <a href="/fr/glossaire.html">Glossaire</a>
+          <a href="/en/glossaire.html">Glossary</a>
          </div>
          <div class="center">
-             <a href="/fr/mentionlegales.html">Mentions légales</a>
+             <a href="/en/mentionlegales.html">Legal Notice</a>
          </div>
         <div class="right">
-          <a href="/fr/contact.html">CONTACT</a>
+          <a href="/en/contact.html">CONTACT</a>
         </div>
       </div>
       <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
@@ -124,13 +124,13 @@
         <img src="/public/img/logo/Visit.png" alt="visit" id="vecteur">
         </div>
         <div class="right2">
-          <p>Département MMI, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
+          <p>MMI Department, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
         </div>
       </div>
       <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
 <div class="container3">
         <div class="left3">
-          <p>© 2024 Sherman Legends. Tous droits réservés.</p>
+          <p>© 2024 Sherman Legends. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''"></html>
+<html lang="en" x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Glossaire</title>
+    <title>Glossary</title>
     <link rel="stylesheet" href="/src/css/Divers/header.css">
     <link rel="stylesheet" href="/src/css/Divers/main.css">
     <link rel="stylesheet" href="/src/css/Divers/footer.css">
@@ -16,48 +16,49 @@
 <body>
   <header  @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
     :class="{ 'header--atTop' : !atTop }" class="header">  
-        <a href="/fr/index.html">
+        <a href="/en/index.html">
             <img src="/public/img/logo/Sherman Legends 1.png" alt="logo" id="logo">
         </a>
         <button @click="menuIsOpen = !menuIsOpen"> <img src="/public/img/logo/menu-open.png" alt="menu" id="menu"></button>
     <nav x-show="menuIsOpen" @click.away="menuIsOpen = false" x-transition.duration.800ms class="halouil" x-cloak>
             <img src="/public/img/logo/Sherman Legends 1.png" alt="fet" id="fet">
-        <li><a href="/fr/m4a3e8.html" id="dlc">Le M4A3E8 Sherman</a></li>
+        <li><a href="/en/m4a3e8.html" id="dlc">The M4A3E8 Sherman</a></li>
             <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
             <li @click="isSubOpen = !isSubOpen">
                 <a href="#section2" id="dlc">Article > </a></li>
             <ul x-show="isSubOpen" @click.away="isSubOpen = false"  x-transition.duration.800ms>
-                <li id="li2"><a href="/fr/comprendre.html" id="dlc2">Comprendre notre monde à travers les mots du Sergent Wardaddy</a></li>
+                <li id="li2"><a href="/en/comprendre.html" id="dlc2">Understanding our world through Sergeant Wardaddy's words</a></li>
                 <br>
-                <li id="li2"><a href="/fr/fury.html" id="dlc2"> Fury : Une immersion brutale dans les combats de tanks </a></li>
+                <li id="li2"><a href="/en/fury.html" id="dlc2">Fury: A brutal immersion in tank combat</a></li>
                 <br>
-                <li id="li2"><a href="/fr/norman.html" id="dlc2">‘Norman’ de Steven Price : Une symphonie de courage </a></li>
+                <li id="li2"><a href="/en/norman.html" id="dlc2">'Norman' by Steven Price: A symphony of courage</a></li>
                   <br>
-                  <li id="li2"><a href="/fr/david.html" id="dlc2">David Ayer : De la Rue à la Gloire</a></li>
+                  <li id="li2"><a href="/en/david.html" id="dlc2">David Ayer: From the Street to Glory</a></li>
                     <br>
-                    <li id="li2"><a href="/fr/machine.html" id="dlc2">Machine de Guerre Tome 3 : Un Tourbillon de Conflits</a></li>
+                    <li id="li2"><a href="/en/machine.html" id="dlc2">War Machine Volume 3: A Whirlwind of Conflicts</a></li>
                       <br>
                 </ul>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/frisechrono.html" id="dlc">Frise chronologique</a></li>
+                <li><a href="/en/timeline.html" id="dlc">Timeline</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/autresprojet.html" id="dlc">Autres projet</a></li>
+                <li><a href="/en/autresprojet.html" id="dlc">Other projects</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/autrefilms.html" id="dlc">Autres Films</a></li>
+                <li><a href="/en/othermovies.html" id="dlc">Other Movies</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/apropos.html" id="dlc">A propos</a></li>
+                <li><a href="/en/about.html" id="dlc">About</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/contact.html" id="dlc">Contact</a></li>
+                <li><a href="/en/contact.html" id="dlc">Contact</a></li>
+                
     </nav>
-        <h1>Glossaire</h1>
+        <h1>Glossary</h1>
         </header>
         <main>
                 <ul>
-                    <li><strong>M4A3E8 Sherman =</strong> Voir la page Le M4A3E8 Sherman ci-joint</li>
-                    <li><strong>Tireur du char =</strong> Son rôle principal est de manœuvrer l’arme principale du char, généralement un canon, et de tirer sur les cibles désignées</li>
-                    <li><strong>Chargeur-mécanicien du char =</strong> le chargeur est un membre de l’équipage dont le rôle principal est de charger le canon du char avec des munitions et mécanicien car celui-ci se charge également du bon fonctionnement du char.</li>
-                    <li><strong>Sherman =</strong> Le Sherman est un type de char moyen américain, largement utilisé pendant la Seconde Guerre mondiale</li>
-                    <li><strong>Pilote du char =</strong> C’est la personne qui conduit le char et qui participe à son entretien.</li>
+                    <li><strong>M4A3E8 Sherman =</strong> See the attached page on the M4A3E8 Sherman</li>
+                    <li><strong>Tank Gunner =</strong> Their main role is to operate the tank's main weapon, usually a cannon, and fire at designated targets</li>
+                    <li><strong>Tank Loader-Mechanic =</strong> The loader is a crew member whose main role is to load the tank's cannon with ammunition and also act as a mechanic responsible for the tank's proper functioning.</li>
+                    <li><strong>Sherman =</strong> The Sherman is a type of American medium tank, widely used during World War II</li>
+                    <li><strong>Tank Driver =</strong> This is the person who drives the tank and participates in its maintenance.</li>
                 </ul>
     <footer>
         <div class="logo-container">
@@ -65,7 +66,7 @@
         <p id="expo">Sherman <br>Legends</p>        
         <img src="/public/img/logo/logo-iut.png" alt="iut" id="iut">
         </div>
-        <p id="suivi">suivez-moi</p>
+        <p id="suivi">follow me</p>
         <div class="footer-logos">
             <a href="https://www.linkedin.com/in/ethan-schmitt-a0ab1b299/">
               <img src="/public/img/logo/LinkedIn.png" alt="link" id="lg">
@@ -80,13 +81,13 @@
         <p id="nume">MENU</p>
         <div class="container">
             <div class="left">
-              <a href="/fr/glossaire.html">Glossaire</a>
+              <a href="/en/glossaire.html">Glossary</a>
              </div>
              <div class="center">
-                 <a href="/fr/mentionlegales.html">Mentions légales</a>
+                 <a href="/en/mentionlegales.html">Legal Notice</a>
              </div>
             <div class="right">
-              <a href="/fr/contact.html">CONTACT</a>
+              <a href="/en/contact.html">CONTACT</a>
             </div>
           </div>
           <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
@@ -95,13 +96,13 @@
             <img src="/public/img/logo/Visit.png" alt="visit" id="vecteur">
             </div>
             <div class="right2">
-              <p>Département MMI, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
+              <p>MMI Department, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
             </div>
           </div>
           <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
     <div class="container3">
             <div class="left3">
-              <p>© 2024 Sherman Legends. Tous droits réservés.</p>
+              <p>© 2024 Sherman Legends. All rights reserved.</p>
             </div>
           </div>
         </footer>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''"></html>
+<html lang="en" x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autres Films </title>
+    <title>Other Films</title>
     <link rel="stylesheet" href="/src/css/Autres/header.css">
     <link rel="stylesheet" href="/src/css/Autres/main.css">
     <link rel="stylesheet" href="/src/css/Autres/footer.css">
@@ -16,92 +16,93 @@
 <body>
   <header  @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
     :class="{ 'header--atTop' : !atTop }" class="header">  
-        <a href="/fr/index.html">
+        <a href="/en/index.html">
             <img src="/public/img/logo/Sherman Legends 1.png" alt="logo" id="logo">
         </a>
         <button @click="menuIsOpen = !menuIsOpen"> <img src="/public/img/logo/menu-open.png" alt="menu" id="menu"></button>
     <nav x-show="menuIsOpen" @click.away="menuIsOpen = false" x-transition.duration.800ms class="halouil" x-cloak>
        <ul>
             <img src="/public/img/logo/Sherman Legends 1.png" alt="fet" id="fet">
-        <li><a href="/fr/m4a3e8.html" id="dlc">Le M4A3E8 Sherman</a></li>
+        <li><a href="/en/m4a3e8.html" id="dlc">The M4A3E8 Sherman</a></li>
             <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
             <li @click="isSubOpen = !isSubOpen">
                 <a href="#section2" id="dlc">Article > </a></li>
             <ul x-show="isSubOpen" @click.away="isSubOpen = false"  x-transition.duration.800ms>
-                <li id="li2"><a href="/fr/comprendre.html" id="dlc2">Comprendre notre monde à travers les mots du Sergent Wardaddy</a></li>
+                <li id="li2"><a href="/en/comprendre.html" id="dlc2">Understanding our world through the words of Sergeant Wardaddy</a></li>
                 <br>
-                <li id="li2"><a href="/fr/fury.html" id="dlc2"> Fury : Une immersion brutale dans les combats de tanks </a></li>
+                <li id="li2"><a href="/en/fury.html" id="dlc2">Fury: A brutal immersion into tank battles</a></li>
                 <br>
-                <li id="li2"><a href="/fr/norman.html" id="dlc2">‘Norman’ de Steven Price : Une symphonie de courage </a></li>
+                <li id="li2"><a href="/en/norman.html" id="dlc2">'Norman' by Steven Price: A symphony of courage</a></li>
                   <br>
-                  <li id="li2"><a href="/fr/david.html" id="dlc2">David Ayer : De la Rue à la Gloire</a></li>
+                  <li id="li2"><a href="/en/david.html" id="dlc2">David Ayer: From the Street to Glory</a></li>
                     <br>
-                    <li id="li2"><a href="/fr/machine.html" id="dlc2">Machine de Guerre Tome 3 : Un Tourbillon de Conflits</a></li>
+                    <li id="li2"><a href="/en/machine.html" id="dlc2">War Machine Volume 3: A Whirlwind of Conflicts</a></li>
                       <br>
                 </ul>
-            <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-            <li><a href="/fr/frisechrono.html" id="dlc">Frise chronologique</a></li>
-            <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-            <li><a href="/fr/autresprojet.html" id="dlc">Autres projet</a></li>
-            <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-            <li><a href="/fr/autrefilms.html" id="dlc">Autres Films</a></li>
-            <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-            <li><a href="/fr/apropos.html" id="dlc">A propos</a></li>
-            <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-            <li><a href="/fr/contact.html" id="dlc">Contact</a></li>
+                <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
+                <li><a href="/en/timeline.html" id="dlc">Timeline</a></li>
+                <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
+                <li><a href="/en/autresprojet.html" id="dlc">Other projects</a></li>
+                <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
+                <li><a href="/en/othermovies.html" id="dlc">Other Movies</a></li>
+                <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
+                <li><a href="/en/about.html" id="dlc">About</a></li>
+                <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
+                <li><a href="/en/contact.html" id="dlc">Contact</a></li>
+                
             
            
     </nav>
-        <h1>Autres Films </h1>
+        <h1>Other Films</h1>
         </header>
         <main>
             <div class="separator"></div>
-             <a href="https://fr.wikipedia.org/wiki/Apocalypse_Now">
+             <a href="https://en.wikipedia.org/wiki/Apocalypse_Now">
                <img src="/public/img/image/image 17.webp" alt="imgf" class="imgf">
             </a>
             <div class="background1">
-              <h1>Apocalypse Now (1979) réalisé par Francis Ford Coppola</h1>
-              <p>Un voyage déstabilisant au cœur de la guerre du Vietnam, où un capitaine est chargé de retrouver et d’éliminer un colonel renégat.</p>
+              <h1>Apocalypse Now (1979) directed by Francis Ford Coppola</h1>
+              <p>A destabilizing journey into the heart of the Vietnam War, where a captain is tasked with finding and eliminating a rogue colonel.</p>
             </div>
             <div class="separator"></div>
-            <a href="https://fr.wikipedia.org/wiki/Full_Metal_Jacket">
+            <a href="https://en.wikipedia.org/wiki/Full_Metal_Jacket">
                  <img src="/public/img/image/image 19.webp" alt="imgf" class="imgf">
                 </a>
             <div class="background2">
-                <h1>Full Metal Jacket (1987), réalisé par Stanley Kubrick</h1>
-                <p>Un regard impitoyable sur le processus de déshumanisation des soldats pendant la guerre du Vietnam, à travers les yeux d’une jeune recrue.</p>
+                <h1>Full Metal Jacket (1987), directed by Stanley Kubrick</h1>
+                <p>A ruthless look at the process of dehumanization of soldiers during the Vietnam War, through the eyes of a young recruit.</p>
               </div>
               <div class="separator"></div>
-               <a href="https://fr.wikipedia.org/wiki/Il_faut_sauver_le_soldat_Ryan">
+               <a href="https://en.wikipedia.org/wiki/Il_faut_sauver_le_soldat_Ryan">
                  <img src="/public/img/image/image 21.webp" alt="imgf" class="imgf">
                 </a>
               <div class="background3">
-                <h1>Il faut sauver le soldat Ryan (1998) réalisé par Steven Spielberg</h1>
-                <p>Une mission périlleuse pour sauver un soldat parachutiste dont les frères ont été tués au combat pendant la Seconde Guerre mondiale.</p>
+                <h1>Saving Private Ryan (1998) directed by Steven Spielberg</h1>
+                <p>A perilous mission to save a paratrooper whose brothers were killed in combat during World War II.</p>
               </div>
               <div class="separator"></div>
-               <a href="https://fr.wikipedia.org/wiki/La_Ligne_rouge_(film,_1998)">
+               <a href="https://en.wikipedia.org/wiki/La_Ligne_rouge_(film,_1998)">
                  <img src="/public/img/image/image 23.webp" alt="imgf" class="imgf">
                 </a>
               <div class="background4">
-                <h1>La Ligne rouge (1998) réalisé par Terrence Malick</h1>
-                <p>Une méditation poétique et viscérale sur la nature de la guerre, centrée sur la bataille de Guadalcanal pendant la Seconde Guerre mondiale.</p>
+                <h1>The Thin Red Line (1998) directed by Terrence Malick</h1>
+                <p>A poetic and visceral meditation on the nature of war, centered around the Battle of Guadalcanal during World War II.</p>
               </div>
               <div class="separator"></div>
-              <a href="https://fr.wikipedia.org/wiki/Voyage_au_bout_de_l%27enfer">
+              <a href="https://en.wikipedia.org/wiki/Voyage_au_bout_de_l%27enfer">
                  <img src="/public/img/image/image 25.webp" alt="imgf" class="imgf">
                 </a>
               <div class="background5">
-                <h1>Voyage au bout de l’enfer (1978) réalisé par Michael Cimino</h1>
-                <p>Un récit déchirant sur l’impact de la guerre du Vietnam sur la vie de trois amis d’une petite ville industrielle.</p>
+                <h1>The Deer Hunter (1978) directed by Michael Cimino</h1>
+                <p>A heartbreaking story about the impact of the Vietnam War on the lives of three friends from a small industrial town.</p>
               </div>
               <div class="separator"></div>
-              <a href="https://fr.wikipedia.org/wiki/1917_(film)">
+              <a href="https://en.wikipedia.org/wiki/1917_(film)">
                  <img src="/public/img/image/image 27.webp" alt="imgf" class="imgf">
                 </a>
               <div class="background6">
-               <h1>1917 (2019) réalisé par Sam Mendes</h1>
-                <p>Un récit haletant et immersif qui suit deux jeunes soldats britanniques chargés de délivrer un message crucial pour empêcher une attaque désastreuse pendant la Première Guerre mondiale.</p>
+               <h1>1917 (2019) directed by Sam Mendes</h1>
+                <p>A gripping and immersive tale that follows two young British soldiers tasked with delivering a crucial message to prevent a disastrous attack during World War I.</p>
               </div>
               <div class="separator"></div>
 </main>
@@ -111,7 +112,7 @@
     <p id="expo">Sherman <br>Legends</p>        
     <img src="/public/img/logo/logo-iut.png" alt="iut" id="iut">
     </div>
-    <p id="suivi">suivez-moi</p>
+    <p id="suivi">follow me</p>
     <div class="footer-logos">
         <a href="https://www.linkedin.com/in/ethan-schmitt-a0ab1b299/">
           <img src="/public/img/logo/LinkedIn.png" alt="link" id="lg">
@@ -126,13 +127,13 @@
     <p id="nume">MENU</p>
     <div class="container">
         <div class="left">
-          <a href="/fr/glossaire.html">Glossaire</a>
+          <a href="/en/glossaire.html">Glossary</a>
          </div>
          <div class="center">
-             <a href="/fr/mentionlegales.html">Mentions légales</a>
+             <a href="/en/mentionlegales.html">Legal Notice</a>
          </div>
         <div class="right">
-          <a href="/fr/contact.html">CONTACT</a>
+          <a href="/en/contact.html">CONTACT</a>
         </div>
       </div>
       <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
@@ -141,13 +142,13 @@
         <img src="/public/img/logo/Visit.png" alt="visit" id="vecteur">
         </div>
         <div class="right2">
-          <p>Département MMI, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
+          <p>MMI Department, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
         </div>
       </div>
       <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
 <div class="container3">
         <div class="left3">
-          <p>© 2024 Sherman Legends. Tous droits réservés.</p>
+          <p>© 2024 Sherman Legends. All rights reserved.</p>
         </div>
       </div>
     </footer>

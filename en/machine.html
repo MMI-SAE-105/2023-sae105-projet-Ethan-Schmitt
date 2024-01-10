@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''"></html>
+<html lang="en" x-data="{menuIsOpen: false, isSubOpen: false}" :class="menuIsOpen ? 'noscroll' : ''"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Machine de Guerre Tome 3 : Un Tourbillon de Conflits</title>
+    <title> War Machine Volume 3: A Whirlwind of Conflicts</title>
     <link rel="stylesheet" href="/src/css/Articles/header.css">
     <link rel="stylesheet" href="/src/css/Articles/main.css">
     <link rel="stylesheet" href="/src/css/Articles/footer.css">
@@ -16,56 +16,57 @@
 <body>
   <header class="header-page5"  @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
     :class="{ 'header--atTop' : !atTop }" class="header">  
-        <a href="/fr/index.html">
+        <a href="/en/index.html">
             <img src="/public/img/logo/Sherman Legends 1.png" alt="logo" id="logo">
         </a>
         <button @click="menuIsOpen = !menuIsOpen"> <img src="/public/img/logo/menu-open.png" alt="menu" id="menu"></button>
         <nav x-show="menuIsOpen" @click.away="menuIsOpen = false" x-transition.duration.800ms class="halouil" x-cloak>
        <ul>
             <img src="/public/img/logo/Sherman Legends 1.png" alt="fet" id="fet">
-        <li><a href="/fr/m4a3e8.html" id="dlc">Le M4A3E8 Sherman</a></li>
+        <li><a href="/en/m4a3e8.html" id="dlc">The M4A3E8 Sherman</a></li>
             <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
             <li @click="isSubOpen = !isSubOpen">
                 <a href="#section2" id="dlc">Article > </a></li>
             <ul x-show="isSubOpen" @click.away="isSubOpen = false"  x-transition.duration.800ms>
-                <li id="li2"><a href="/fr/comprendre.html" id="dlc2">Comprendre notre monde à travers les mots du Sergent Wardaddy</a></li>
+                <li id="li2"><a href="/en/comprendre.html" id="dlc2">Understanding our world through the words of Sergeant Wardaddy</a></li>
                 <br>
-                <li id="li2"><a href="/fr/fury.html" id="dlc2"> Fury : Une immersion brutale dans les combats de tanks </a></li>
+                <li id="li2"><a href="/en/fury.html" id="dlc2"> Fury: A brutal immersion in tank combat </a></li>
                 <br>
-                <li id="li2"><a href="/fr/norman.html" id="dlc2">‘Norman’ de Steven Price : Une symphonie de courage </a></li>
+                <li id="li2"><a href="/en/norman.html" id="dlc2">‘Norman’ by Steven Price: A symphony of courage </a></li>
                   <br>
-                  <li id="li2"><a href="/fr/david.html" id="dlc2">David Ayer : De la Rue à la Gloire</a></li>
+                  <li id="li2"><a href="/en/david.html" id="dlc2">David Ayer: From the Street to Glory</a></li>
                     <br>
-                    <li id="li2"><a href="/fr/machine.html" id="dlc2">Machine de Guerre Tome 3 : Un Tourbillon de Conflits</a></li>
+                    <li id="li2"><a href="/en/machine.html" id="dlc2">War Machine Volume 3: A Whirlwind of Conflicts</a></li>
                       <br>
                 </ul>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/frisechrono.html" id="dlc">Frise chronologique</a></li>
+                <li><a href="/en/timeline.html" id="dlc">Timeline</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/autresprojet.html" id="dlc">Autres projet</a></li>
+                <li><a href="/en/autresprojet.html" id="dlc">Other projects</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/autrefilms.html" id="dlc">Autres Films</a></li>
+                <li><a href="/en/othermovies.html" id="dlc">Other Movies</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/apropos.html" id="dlc">A propos</a></li>
+                <li><a href="/en/about.html" id="dlc">About</a></li>
                 <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
-                <li><a href="/fr/contact.html" id="dlc">Contact</a></li>
+                <li><a href="/en/contact.html" id="dlc">Contact</a></li>
+                
     </nav>
-        <h1>Machine de Guerre Tome 3 : Un Tourbillon de Conflits</h1>
+        <h1>War Machine Volume 3: A Whirlwind of Conflicts</h1>
         </header>
         <main>
             <img src="public/img/Barre de style.png" alt="barre" id="barre">
-            <p id="intro">L'histoire se déroule en 1944, pendant la Seconde Guerre mondiale. Cinq soldats américains sont sélectionnés pour former l'équipage d'un char Sherman, surnommé "Dream Team". Ils sont entraînés par un instructeur qui leur apprend les rudiments du combat blindé et les met en garde contre les dangers du front. Le char Sherman est rapide et maniable, mais il est inférieur aux chars allemands comme le Tigre ou le Panther.</p>
+            <p id="intro">The story takes place in 1944, during World War II. Five American soldiers are selected to form the crew of a Sherman tank, nicknamed "Dream Team". They are trained by an instructor who teaches them the basics of armored combat and warns them of the dangers of the front line. The Sherman tank is fast and maneuverable, but it is inferior to German tanks like the Tiger or the Panther.</p>
             <img src="/public/img/image/Image BD.webp" >
-            <p>Le jour J, le 6 juin 1944, la Dream Team débarque sur la plage d'Omaha, en Normandie. Ils doivent rejoindre la 3e division blindée US Spearhead, qui doit percer les lignes ennemies et avancer vers Paris. Mais le chemin est semé d'embûches : mines, pièges, embuscades, snipers, avions... La Dream Team doit faire preuve de courage, de solidarité et d'ingéniosité pour survivre et accomplir sa mission.
-                Au fil des combats, les cinq soldats vont nouer des liens d'amitié, mais aussi connaître la peur, la douleur et la mort. Ils vont croiser des personnages historiques comme le général Patton, le colonel Abrams ou le résistant Jean Moulin. Ils vont aussi découvrir la réalité de la guerre, avec ses horreurs, ses atrocités et ses dilemmes moraux.</p>
-            <p>La bande dessinée Machines de guerre tome 3 - Dream Team est un récit historique et réaliste, qui rend hommage aux soldats qui ont combattu pour la liberté. Elle mêle l'action, le suspense, l'humour et l'émotion. Elle est servie par un dessin dynamique et précis, qui reconstitue fidèlement les décors, les armes et les véhicules de l'époque.</p>
-            <h3><strong>À ne pas manquer :</strong></h3>
+            <p>On D-Day, June 6, 1944, the Dream Team lands on Omaha Beach in Normandy. They must join the US 3rd Armored Division Spearhead, which is tasked with breaking through enemy lines and advancing towards Paris. But the path is filled with obstacles: mines, traps, ambushes, snipers, planes... The Dream Team must show courage, solidarity, and ingenuity to survive and accomplish their mission.
+                As they face the battles, the five soldiers will forge friendships, but also experience fear, pain, and death. They will encounter historical figures such as General Patton, Colonel Abrams, or the resistance fighter Jean Moulin. They will also discover the reality of war, with its horrors, atrocities, and moral dilemmas.</p>
+            <p>The comic book War Machines Volume 3 - Dream Team is a historical and realistic narrative that pays tribute to the soldiers who fought for freedom. It combines action, suspense, humor, and emotion. It is accompanied by dynamic and precise artwork that faithfully recreates the settings, weapons, and vehicles of the time.</p>
+            <h3><strong>Don't miss:</strong></h3>
             <div class="center">
-            <a href="/fr/norman.html">
-                <img src="/public/img/logo/Ne pas manquer Norman.png" alt="block" class="block">
+            <a href="/en/norman.html">
+                <img src="/public/img/logo/Norman english version.png" alt="block" class="block">
             </a>
-            <a href="/fr/m4a3e8.html">
-                <img src="/public/img/image/Char.png" alt="block" class="block">
+            <a href="/en/m4a3e8.html">
+                <img src="/public/img/logo/m4a3e8 english version.png" alt="block" class="block">
             </a>
         </div>
     </main>
@@ -75,7 +76,7 @@
         <p id="expo">Sherman <br>Legends</p>        
         <img src="/public/img/logo/logo-iut.png" alt="iut" id="iut">
         </div>
-        <p id="suivi">suivez-moi</p>
+        <p id="suivi">follow me</p>
         <div class="footer-logos">
             <a href="https://www.linkedin.com/in/ethan-schmitt-a0ab1b299/">
               <img src="/public/img/logo/LinkedIn.png" alt="link" id="lg">
@@ -89,29 +90,29 @@
         </div>
         <p id="nume">MENU</p>
         <div class="container">
-            <div class="left">
-              <a href="/fr/glossaire.html">Glossaire</a>
-             </div>
-             <div class="center">
-                 <a href="/fr/mentionlegales.html">Mentions légales</a>
-             </div>
-            <div class="right">
-              <a href="/fr/contact.html">CONTACT</a>
-            </div>
+          <div class="left">
+            <a href="/en/glossaire.html">Glossary</a>
+           </div>
+           <div class="center">
+               <a href="/en/mentionlegales.html">Legal Notice</a>
+           </div>
+          <div class="right">
+            <a href="/en/contact.html">CONTACT</a>
           </div>
+        </div>
           <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
         <div class="container2">
             <div class="left2">
             <img src="/public/img/logo/Visit.png" alt="visit" id="vecteur">
             </div>
             <div class="right2">
-              <p>Département MMI, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
+              <p>MMI Department, 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
             </div>
           </div>
           <img src="/public/img/logo/Barre de style blanc.png" alt="bar" id="bar">
     <div class="container3">
             <div class="left3">
-              <p>© 2024 Sherman Legends. Tous droits réservés.</p>
+              <p>© 2024 Sherman Legends. All rights reserved.</p>
             </div>
           </div>
         </footer>
